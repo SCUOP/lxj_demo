@@ -1,0 +1,926 @@
+2023-01-16 13:49:10.468  INFO 19164 --- [main] c.s.l.LocationserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 13:49:10.918  INFO 19164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 13:49:10.921  INFO 19164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 13:49:10.942  INFO 19164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 13:49:11.134  INFO 19164 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d89ce955-e99a-3d88-acbf-b00c3ea9d46c
+2023-01-16 13:49:11.518  INFO 19164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-01-16 13:49:11.530  INFO 19164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 13:49:11.531  INFO 19164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 13:49:11.671  INFO 19164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 13:49:11.672  INFO 19164 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1187 ms
+2023-01-16 13:49:12.218  INFO 19164 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 13:49:14.046  INFO 19164 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 13:49:15.177  INFO 19164 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 13:49:15.220  INFO 19164 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 13:49:15.221  INFO 19164 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 13:49:15.221  INFO 19164 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 13:49:15.303  INFO 19164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-01-16 13:49:15.310  INFO 19164 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8082, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@locationservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 13:49:15.311  INFO 19164 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@locationservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 13:49:15.315  INFO 19164 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP locationservice 169.254.148.54:8082 register finished
+2023-01-16 13:49:15.838  INFO 19164 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673848155837,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":7223073749200} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 13:49:15.849  INFO 19164 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 13:49:15.856  INFO 19164 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 13:49:16.357  INFO 19164 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 13:49:16.366  INFO 19164 --- [main] c.s.l.LocationserviceApplication         : Started LocationserviceApplication in 8.917 seconds (JVM running for 9.261)
+2023-01-16 13:49:16.370  INFO 19164 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 13:49:16.371  INFO 19164 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 13:49:16.371  INFO 19164 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 13:49:16.371  INFO 19164 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice.yaml+DEFAULT_GROUP
+2023-01-16 13:49:16.371  INFO 19164 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 13:49:16.372  INFO 19164 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice.yaml, group=DEFAULT_GROUP
+2023-01-16 13:49:16.372  INFO 19164 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice+DEFAULT_GROUP
+2023-01-16 13:49:16.372  INFO 19164 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 13:49:16.372  INFO 19164 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice, group=DEFAULT_GROUP
+2023-01-16 13:49:25.839  INFO 19164 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673848155837,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":7223073749200} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 13:49:25.840  WARN 19164 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673848156295, new-t: 1673848155837
+2023-01-16 13:53:37.282  INFO 19164 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 13:53:37.282  INFO 19164 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 13:53:37.284  INFO 19164 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-01-16 13:53:37.366  INFO 19164 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-16 13:53:37.556  INFO 19164 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-16 17:24:07.874  INFO 19208 --- [main] c.s.l.LocationserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 17:24:08.470  INFO 19208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 17:24:08.474  INFO 19208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 17:24:08.493  INFO 19208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 17:24:08.702  INFO 19208 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5afbce84-78c5-3b8c-bddb-5d3ffaecb2d1
+2023-01-16 17:24:09.071  INFO 19208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-01-16 17:24:09.082  INFO 19208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 17:24:09.082  INFO 19208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 17:24:09.222  INFO 19208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 17:24:09.222  INFO 19208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1322 ms
+2023-01-16 17:24:09.808  INFO 19208 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 17:24:12.138  INFO 19208 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:24:13.363  INFO 19208 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:24:13.413  INFO 19208 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 17:24:13.413  INFO 19208 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 17:24:13.414  INFO 19208 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 17:24:13.506  INFO 19208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-01-16 17:24:13.514  INFO 19208 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8082, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@locationservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 17:24:13.516  INFO 19208 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@locationservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 17:24:13.520  INFO 19208 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP locationservice 169.254.148.54:8082 register finished
+2023-01-16 17:24:14.048  INFO 19208 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673861054047,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":20121284657800} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 17:24:14.066  INFO 19208 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 17:24:14.077  INFO 19208 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 17:24:14.562  INFO 19208 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:24:14.571  INFO 19208 --- [main] c.s.l.LocationserviceApplication         : Started LocationserviceApplication in 9.781 seconds (JVM running for 10.13)
+2023-01-16 17:24:14.576  INFO 19208 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 17:24:14.577  INFO 19208 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:24:14.578  INFO 19208 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 17:24:14.579  INFO 19208 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice.yaml+DEFAULT_GROUP
+2023-01-16 17:24:14.579  INFO 19208 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:24:14.579  INFO 19208 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice.yaml, group=DEFAULT_GROUP
+2023-01-16 17:24:14.579  INFO 19208 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice+DEFAULT_GROUP
+2023-01-16 17:24:14.580  INFO 19208 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:24:14.580  INFO 19208 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice, group=DEFAULT_GROUP
+2023-01-16 17:24:24.050  INFO 19208 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673861054047,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":20121284657800} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 17:24:24.051  WARN 19208 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673861054499, new-t: 1673861054047
+2023-01-16 17:24:28.559  INFO 19208 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 17:24:28.560  INFO 19208 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 17:24:28.561  INFO 19208 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 17:24:28.984  INFO 19208 --- [http-nio-8082-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 181 ms
+2023-01-16 18:20:57.794  INFO 35356 --- [main] c.s.l.LocationserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 18:20:58.330  INFO 35356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 18:20:58.331  INFO 35356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 18:20:58.353  INFO 35356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-01-16 18:20:58.532  INFO 35356 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5afbce84-78c5-3b8c-bddb-5d3ffaecb2d1
+2023-01-16 18:20:58.945  INFO 35356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-01-16 18:20:58.953  INFO 35356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 18:20:58.953  INFO 35356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 18:20:59.079  INFO 35356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 18:20:59.079  INFO 35356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1257 ms
+2023-01-16 18:20:59.678  INFO 35356 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 18:21:02.072  INFO 35356 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:03.305  INFO 35356 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:03.359  INFO 35356 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:21:03.360  INFO 35356 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 18:21:03.360  INFO 35356 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:21:03.431  INFO 35356 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:21:03.440  INFO 35356 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:21:03.457  INFO 35356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-01-16 18:21:03.465  INFO 35356 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8082, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@locationservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:21:03.466  INFO 35356 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@locationservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 18:21:03.469  INFO 35356 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP locationservice 169.254.148.54:8082 register finished
+2023-01-16 18:21:03.943  INFO 35356 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673864463942,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":23531179200100} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:21:03.946  INFO 35356 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8082, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@locationservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:21:03.948  INFO 35356 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : modified ips(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:21:03.956  INFO 35356 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:21:04.519  INFO 35356 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:04.527  INFO 35356 --- [main] c.s.l.LocationserviceApplication         : Started LocationserviceApplication in 9.97 seconds (JVM running for 10.383)
+2023-01-16 18:21:04.532  INFO 35356 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 18:21:04.533  INFO 35356 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:21:04.533  INFO 35356 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 18:21:04.533  INFO 35356 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice.yaml+DEFAULT_GROUP
+2023-01-16 18:21:04.534  INFO 35356 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:21:04.534  INFO 35356 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice.yaml, group=DEFAULT_GROUP
+2023-01-16 18:21:04.534  INFO 35356 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice+DEFAULT_GROUP
+2023-01-16 18:21:04.534  INFO 35356 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:21:04.534  INFO 35356 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice, group=DEFAULT_GROUP
+2023-01-16 18:21:13.957  INFO 35356 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673864463942,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":23531179200100} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:21:13.958  WARN 35356 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673864464457, new-t: 1673864463942
+2023-01-16 18:21:50.226  INFO 31184 --- [main] c.s.l.LocationserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 18:21:51.268  INFO 31184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 18:21:51.272  INFO 31184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 18:21:51.316  INFO 31184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-01-16 18:21:51.729  INFO 31184 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5afbce84-78c5-3b8c-bddb-5d3ffaecb2d1
+2023-01-16 18:21:52.225  INFO 31184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-01-16 18:21:52.235  INFO 31184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 18:21:52.236  INFO 31184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 18:21:52.376  INFO 31184 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 18:21:52.376  INFO 31184 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2108 ms
+2023-01-16 18:21:53.017  INFO 31184 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 18:21:55.575  INFO 31184 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:56.874  INFO 31184 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:56.997  INFO 31184 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:21:56.998  INFO 31184 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 18:21:57.000  INFO 31184 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:21:57.150  INFO 31184 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:21:57.185  INFO 31184 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:21:57.234  INFO 31184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-01-16 18:21:57.245  INFO 31184 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8082, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@locationservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:21:57.247  INFO 31184 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@locationservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 18:21:57.252  INFO 31184 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP locationservice 169.254.148.54:8082 register finished
+2023-01-16 18:21:57.655  INFO 31184 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673864517653,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":23584890774600} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:21:57.658  INFO 31184 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8082, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@locationservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:21:57.659  INFO 31184 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : modified ips(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:21:57.665  INFO 31184 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:21:58.369  INFO 31184 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:58.377  INFO 31184 --- [main] c.s.l.LocationserviceApplication         : Started LocationserviceApplication in 11.676 seconds (JVM running for 12.16)
+2023-01-16 18:21:58.383  INFO 31184 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 18:21:58.384  INFO 31184 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:21:58.385  INFO 31184 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 18:21:58.385  INFO 31184 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice.yaml+DEFAULT_GROUP
+2023-01-16 18:21:58.385  INFO 31184 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:21:58.386  INFO 31184 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice.yaml, group=DEFAULT_GROUP
+2023-01-16 18:21:58.386  INFO 31184 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice+DEFAULT_GROUP
+2023-01-16 18:21:58.386  INFO 31184 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:21:58.386  INFO 31184 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice, group=DEFAULT_GROUP
+2023-01-16 18:22:07.669  INFO 31184 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673864517653,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":23584890774600} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:22:07.670  WARN 31184 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673864518200, new-t: 1673864517653
+2023-01-16 18:57:41.066  INFO 31184 --- [http-nio-8082-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 18:57:41.067  INFO 31184 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 18:57:41.070  INFO 31184 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-01-16 18:58:35.204  INFO 31184 --- [http-nio-8082-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-16 18:58:35.457  INFO 31184 --- [http-nio-8082-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-16 19:04:08.161  INFO 31184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [polling-resp] config changed. dataId=locationservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 19:04:08.161  INFO 31184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[locationservice-dev.yaml+DEFAULT_GROUP]
+2023-01-16 19:04:08.165  INFO 31184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [data-received] dataId=locationservice-dev.yaml, group=DEFAULT_GROUP, tenant=null, md5=41edb0e618fcd302118adc021bf7e587, content=server:
+  port: 8082
+server:
+  servlet:
+    context-path: location
+
+spring:
+  # 数据库配置
+  datasource:
+..., type=yaml
+2023-01-16 19:04:08.167  INFO 31184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [notify-context] dataId=locationservice-dev.yaml, group=DEFAULT_GROUP, md5=41edb0e618fcd302118adc021bf7e587
+2023-01-16 19:04:09.233  INFO 31184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:04:09.313  WARN 31184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[locationservice] & group[DEFAULT_GROUP]
+2023-01-16 19:04:09.314  WARN 31184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[locationservice.yaml] & group[DEFAULT_GROUP]
+2023-01-16 19:04:09.324 ERROR 31184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.c.n.c.NacosPropertySourceBuilder     : parse data from Nacos error,dataId:locationservice-dev.yaml,data:server:
+  port: 8082
+server:
+  servlet:
+    context-path: location
+
+spring:
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: "#Wdl200210"
+    url: jdbc:mysql:///lxj_route
+  # redis配置
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 10s
+    lettuce:
+      pool:
+        max-active: 200
+        max-wait: -1ms
+        max-idle: 10
+        min-idle: 0
+
+# sa-token配置
+sa-token: 
+  # token名称 (同时也是cookie名称)
+  token-name: token
+#   # token有效期，单位s 默认30天, -1代表永不过期 
+#   timeout: 2592000
+#   # token临时有效期 (指定时间内无操作就视为token过期) 单位: 秒
+#   activity-timeout: -1
+  # 是否允许同一账号并发登录 (为true时允许一起登录, 为false时新登录挤掉旧登录) 
+  is-concurrent: false
+  # 在多人登录同一账号时，是否共用一个token (为true时所有登录共用一个token, 为false时每次登录新建一个token) 
+  is-share: true
+#   # token风格
+#   token-style: uuid
+#     # 是否输出操作日志 
+  is-log: true
+
+# mp配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 日志
+logging:
+  file:
+    name: locationservice.log
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+      file-name-pattern: locationservice.%d{yyyy-MM-dd}.%i.log
+
+# feign优化
+feign:
+  client:
+    config:
+      default:
+        logger-level: BASIC
+  httpclient:
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50
+
+org.yaml.snakeyaml.constructor.DuplicateKeyException: while constructing a mapping
+ in 'reader', line 1, column 1:
+    server:
+    ^
+found duplicate key server
+ in 'reader', line 3, column 1:
+    server:
+    ^
+
+	at org.yaml.snakeyaml.constructor.SafeConstructor.processDuplicateKeys(SafeConstructor.java:105) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.SafeConstructor.flattenMapping(SafeConstructor.java:76) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.SafeConstructor.constructMapping2ndStep(SafeConstructor.java:189) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping(BaseConstructor.java:461) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.SafeConstructor$ConstructYamlMap.construct(SafeConstructor.java:556) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObjectNoCheck(BaseConstructor.java:230) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:220) ~[snakeyaml-1.30.jar:na]
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.constructObject(OriginTrackedYamlLoader.java:123) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:174) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:139) ~[snakeyaml-1.30.jar:na]
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:103) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:514) ~[snakeyaml-1.30.jar:na]
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:198) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:88) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.alibaba.cloud.nacos.parser.NacosDataParserHandler.parseNacosData(NacosDataParserHandler.java:92) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:97) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:73) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:199) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:186) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:149) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:47) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:604) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.cloud.context.refresh.LegacyContextRefresher.addConfigFilesToEnvironment(LegacyContextRefresher.java:78) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.context.refresh.LegacyContextRefresher.updateEnvironment(LegacyContextRefresher.java:56) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.context.refresh.ContextRefresher.refreshEnvironment(ContextRefresher.java:101) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.context.refresh.ContextRefresher.refresh(ContextRefresher.java:94) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.handle(RefreshEventListener.java:72) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.onApplicationEvent(RefreshEventListener.java:61) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.24.jar:5.3.24]
+	at com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1.innerReceive(NacosContextRefresher.java:120) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.nacos.api.config.listener.AbstractSharedListener.receiveConfigInfo(AbstractSharedListener.java:40) ~[nacos-api-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.CacheData$1.run(CacheData.java:210) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.CacheData.safeNotifyListener(CacheData.java:241) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.CacheData.checkListenerMd5(CacheData.java:180) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:569) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-01-16 19:04:09.333  INFO 31184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-locationservice-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-locationservice.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-locationservice,DEFAULT_GROUP'}]
+2023-01-16 19:04:09.337  INFO 31184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.boot.SpringApplication               : The following 1 profile is active: "dev"
+2023-01-16 19:04:09.346  INFO 31184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.boot.SpringApplication               : Started application in 1.171 seconds (JVM running for 2543.129)
+2023-01-16 19:04:09.409  INFO 31184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.c.e.event.RefreshEventListener       : Refresh keys changed: [spring.redis.lettuce.pool.max-active, spring.redis.lettuce.pool.max-idle, sa-token.is-log, feign.client.config.default.logger-level, mybatis-plus.configuration.log-impl, spring.redis.host, logging.file.name, spring.redis.port, feign.httpclient.enabled, logging.logback.rollingpolicy.file-name-pattern, spring.datasource.password, spring.datasource.driver-class-name, sa-token.token-name, sa-token.is-share, spring.redis.lettuce.pool.min-idle, spring.datasource.username, feign.httpclient.max-connections, spring.datasource.url, server.port, sa-token.is-concurrent, spring.redis.timeout, feign.httpclient.max-connections-per-route, spring.redis.lettuce.pool.max-wait, logging.logback.rollingpolicy.max-file-size]
+2023-01-16 19:07:00.945  INFO 24328 --- [main] c.s.l.LocationserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 19:07:01.565  INFO 24328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 19:07:01.567  INFO 24328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 19:07:01.587  INFO 24328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-01-16 19:07:01.793  INFO 24328 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5afbce84-78c5-3b8c-bddb-5d3ffaecb2d1
+2023-01-16 19:07:02.069  WARN 24328 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+2023-01-16 19:07:02.082  INFO 24328 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-16 19:07:02.111 ERROR 24328 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.scuop.locationservice.LocationserviceApplication.main(LocationserviceApplication.java:18) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:219) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.7.7.jar:2.7.7]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:140) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:129) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:291) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:76) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:41) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:72) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:287) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:159) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:286) ~[spring-boot-2.7.7.jar:2.7.7]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1092) ~[na:na]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:286) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:72) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:58) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 16 common frames omitted
+
+2023-01-16 19:07:02.116  WARN 24328 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2023-01-16 19:08:32.439  INFO 35364 --- [main] c.s.l.LocationserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 19:08:33.598  INFO 35364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 19:08:33.602  INFO 35364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 19:08:33.634  INFO 35364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2023-01-16 19:08:33.922  INFO 35364 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5afbce84-78c5-3b8c-bddb-5d3ffaecb2d1
+2023-01-16 19:08:34.407  INFO 35364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-01-16 19:08:34.415  INFO 35364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 19:08:34.415  INFO 35364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 19:08:34.566  INFO 35364 --- [main] o.a.c.c.C.[.[localhost].[/location]      : Initializing Spring embedded WebApplicationContext
+2023-01-16 19:08:34.566  INFO 35364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2087 ms
+2023-01-16 19:08:35.257  INFO 35364 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 19:08:37.627  INFO 35364 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:08:38.808  INFO 35364 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:08:38.850  INFO 35364 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 19:08:38.850  INFO 35364 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 19:08:38.850  INFO 35364 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 19:08:38.932  INFO 35364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/location'
+2023-01-16 19:08:38.938  INFO 35364 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8082, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@locationservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 19:08:38.939  INFO 35364 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@locationservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 19:08:38.942  INFO 35364 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP locationservice 169.254.148.54:8082 register finished
+2023-01-16 19:08:39.437  INFO 35364 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673867319436,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":26386672745900} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 19:08:39.453  INFO 35364 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-01-16 19:08:39.465  INFO 35364 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-01-16 19:08:39.981  INFO 35364 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:08:39.988  INFO 35364 --- [main] c.s.l.LocationserviceApplication         : Started LocationserviceApplication in 11.552 seconds (JVM running for 12.972)
+2023-01-16 19:08:39.996  INFO 35364 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 19:08:39.997  INFO 35364 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:08:39.997  INFO 35364 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 19:08:39.997  INFO 35364 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice.yaml+DEFAULT_GROUP
+2023-01-16 19:08:39.997  INFO 35364 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:08:39.997  INFO 35364 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice.yaml, group=DEFAULT_GROUP
+2023-01-16 19:08:39.999  INFO 35364 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice+DEFAULT_GROUP
+2023-01-16 19:08:39.999  INFO 35364 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:08:39.999  INFO 35364 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice, group=DEFAULT_GROUP
+2023-01-16 19:08:49.450  INFO 35364 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673867319436,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":26386672745900} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 19:08:49.451  WARN 35364 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673867319920, new-t: 1673867319436
+2023-01-16 19:08:50.281  INFO 35364 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/location]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 19:08:50.281  INFO 35364 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 19:08:50.282  INFO 35364 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 19:08:50.366  INFO 35364 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-16 19:08:50.553  INFO 35364 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-16 19:09:33.902  INFO 35364 --- [http-nio-8082-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 168 ms
+2023-01-16 21:25:30.360  INFO 23052 --- [main] c.s.l.LocationserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 21:25:31.004  INFO 23052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 21:25:31.007  INFO 23052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 21:25:31.040  INFO 23052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2023-01-16 21:25:31.286  INFO 23052 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5afbce84-78c5-3b8c-bddb-5d3ffaecb2d1
+2023-01-16 21:25:31.786  INFO 23052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-01-16 21:25:31.798  INFO 23052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 21:25:31.799  INFO 23052 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 21:25:31.972  INFO 23052 --- [main] o.a.c.c.C.[.[localhost].[/location]      : Initializing Spring embedded WebApplicationContext
+2023-01-16 21:25:31.973  INFO 23052 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1585 ms
+2023-01-16 21:25:32.622  INFO 23052 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 21:25:35.140  INFO 23052 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:25:36.333  INFO 23052 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:25:36.375  INFO 23052 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 21:25:36.376  INFO 23052 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 21:25:36.377  INFO 23052 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 21:25:36.462  INFO 23052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/location'
+2023-01-16 21:25:36.470  INFO 23052 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8082, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@locationservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 21:25:36.471  INFO 23052 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@locationservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 21:25:36.475  INFO 23052 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP locationservice 169.254.148.54:8082 register finished
+2023-01-16 21:25:36.924  INFO 23052 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673875536923,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":34604160664700} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:25:36.939  INFO 23052 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 21:25:36.947  INFO 23052 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 21:25:37.522  INFO 23052 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:25:37.529  INFO 23052 --- [main] c.s.l.LocationserviceApplication         : Started LocationserviceApplication in 10.277 seconds (JVM running for 10.637)
+2023-01-16 21:25:37.536  INFO 23052 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 21:25:37.539  INFO 23052 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:25:37.539  INFO 23052 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 21:25:37.539  INFO 23052 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice.yaml+DEFAULT_GROUP
+2023-01-16 21:25:37.539  INFO 23052 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:25:37.540  INFO 23052 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice.yaml, group=DEFAULT_GROUP
+2023-01-16 21:25:37.540  INFO 23052 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice+DEFAULT_GROUP
+2023-01-16 21:25:37.540  INFO 23052 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:25:37.540  INFO 23052 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice, group=DEFAULT_GROUP
+2023-01-16 21:25:46.928  INFO 23052 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673875536923,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":34604160664700} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:25:46.930  WARN 23052 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673875537462, new-t: 1673875536923
+2023-01-16 21:29:57.606  INFO 23052 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/location]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 21:29:57.606  INFO 23052 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 21:29:57.609  INFO 23052 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-01-16 21:29:57.730 ERROR 23052 --- [http-nio-8082-exec-1] c.s.l.util.GlobalExceptionAdvice         : Validation failed for argument [0] in public cn.dev33.satoken.util.SaResult com.scuop.locationservice.controller.LocationController.chageLocation(com.scuop.locationservice.domain.Location): [Field error in object 'location' on field 'locationName': rejected value [null]; codes [NotBlank.location.locationName,NotBlank.locationName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [location.locationName,locationName]; arguments []; default message [locationName]]; default message [不能为空]] 
+
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public cn.dev33.satoken.util.SaResult com.scuop.locationservice.controller.LocationController.chageLocation(com.scuop.locationservice.domain.Location): [Field error in object 'location' on field 'locationName': rejected value [null]; codes [NotBlank.location.locationName,NotBlank.locationName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [location.locationName,locationName]; arguments []; default message [locationName]]; default message [不能为空]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:141) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:699) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-01-16 21:31:25.642  INFO 22268 --- [main] c.s.l.LocationserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 21:31:26.294  INFO 22268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 21:31:26.296  INFO 22268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 21:31:26.321  INFO 22268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-01-16 21:31:26.568  INFO 22268 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5afbce84-78c5-3b8c-bddb-5d3ffaecb2d1
+2023-01-16 21:31:27.003  INFO 22268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-01-16 21:31:27.015  INFO 22268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 21:31:27.016  INFO 22268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 21:31:27.179  INFO 22268 --- [main] o.a.c.c.C.[.[localhost].[/location]      : Initializing Spring embedded WebApplicationContext
+2023-01-16 21:31:27.180  INFO 22268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1507 ms
+2023-01-16 21:31:27.850  INFO 22268 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 21:31:30.292  INFO 22268 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:31:31.507  INFO 22268 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:31:31.563  INFO 22268 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 21:31:31.564  INFO 22268 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 21:31:31.564  INFO 22268 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 21:31:31.660  INFO 22268 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 21:31:31.669  INFO 22268 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 21:31:31.688  INFO 22268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/location'
+2023-01-16 21:31:31.695  INFO 22268 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8082, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@locationservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 21:31:31.698  INFO 22268 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@locationservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 21:31:31.701  INFO 22268 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP locationservice 169.254.148.54:8082 register finished
+2023-01-16 21:31:32.149  INFO 22268 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673875892148,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":34959385840100} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:31:32.755  INFO 22268 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:31:32.766  INFO 22268 --- [main] c.s.l.LocationserviceApplication         : Started LocationserviceApplication in 10.238 seconds (JVM running for 10.584)
+2023-01-16 21:31:32.773  INFO 22268 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 21:31:32.774  INFO 22268 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:31:32.775  INFO 22268 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 21:31:32.775  INFO 22268 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice.yaml+DEFAULT_GROUP
+2023-01-16 21:31:32.776  INFO 22268 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:31:32.776  INFO 22268 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice.yaml, group=DEFAULT_GROUP
+2023-01-16 21:31:32.776  INFO 22268 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice+DEFAULT_GROUP
+2023-01-16 21:31:32.777  INFO 22268 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:31:32.777  INFO 22268 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice, group=DEFAULT_GROUP
+2023-01-16 21:31:36.947  INFO 22268 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/location]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 21:31:36.948  INFO 22268 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 21:31:36.949  INFO 22268 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 21:31:37.071  INFO 22268 --- [http-nio-8082-exec-1] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 21:31:37.078  INFO 22268 --- [http-nio-8082-exec-1] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 21:31:37.601  INFO 22268 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673875897600,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":34964837924300} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:31:38.037  INFO 22268 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-16 21:31:38.228  INFO 22268 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-16 21:31:38.326 ERROR 22268 --- [http-nio-8082-exec-1] c.s.l.util.GlobalExceptionAdvice         : 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'start_time' cannot be null
+### The error may exist in com/scuop/locationservice/dao/LocationDao.java (best guess)
+### The error may involve com.scuop.locationservice.dao.LocationDao.update-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE location  SET start_time=?,end_time=?,location_name=?,description=?      WHERE (route_id = ? AND order_id = ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'start_time' cannot be null
+; Column 'start_time' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'start_time' cannot be null
+
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'start_time' cannot be null
+### The error may exist in com/scuop/locationservice/dao/LocationDao.java (best guess)
+### The error may involve com.scuop.locationservice.dao.LocationDao.update-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE location  SET start_time=?,end_time=?,location_name=?,description=?      WHERE (route_id = ? AND order_id = ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'start_time' cannot be null
+; Column 'start_time' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'start_time' cannot be null
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:87) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy96.update(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:64) ~[mybatis-plus-core-3.5.3.jar:3.5.3]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.5.3.jar:3.5.3]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.3.jar:3.5.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy103.update(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.24.jar:5.3.24]
+	at jdk.proxy2/jdk.proxy2.$Proxy104.update(Unknown Source) ~[na:na]
+	at com.scuop.locationservice.service.serviceImpl.LocationService.updateByRouteOrder(LocationService.java:130) ~[classes/:na]
+	at com.scuop.locationservice.service.serviceImpl.LocationService$$FastClassBySpringCGLIB$$15aa6b0b.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.24.jar:5.3.24]
+	at com.scuop.locationservice.service.serviceImpl.LocationService$$EnhancerBySpringCGLIB$$c3ff2f6e.updateByRouteOrder(<generated>) ~[classes/:na]
+	at com.scuop.locationservice.controller.LocationController.chageLocation(LocationController.java:140) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:699) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'start_time' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-j-8.0.31.jar:8.0.31]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.31.jar:8.0.31]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354) ~[mysql-connector-j-8.0.31.jar:8.0.31]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.10.jar:3.5.10]
+	at jdk.proxy3/jdk.proxy3.$Proxy136.execute(Unknown Source) ~[na:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194) ~[mybatis-3.5.10.jar:3.5.10]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	... 71 common frames omitted
+
+2023-01-16 21:31:42.155  INFO 22268 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673875892148,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":34959385840100} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:31:42.157  WARN 22268 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673875892678, new-t: 1673875892148
+2023-01-16 21:31:47.603  INFO 22268 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673875897600,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":34964837924300} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:31:47.604  WARN 22268 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673875898083, new-t: 1673875897600
+2023-01-16 21:34:38.975 ERROR 22268 --- [http-nio-8082-exec-3] c.s.l.util.GlobalExceptionAdvice         : 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'end_time' cannot be null
+### The error may exist in com/scuop/locationservice/dao/LocationDao.java (best guess)
+### The error may involve com.scuop.locationservice.dao.LocationDao.update-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE location  SET start_time=?,end_time=?,location_name=?,description=?      WHERE (route_id = ? AND order_id = ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'end_time' cannot be null
+; Column 'end_time' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'end_time' cannot be null
+
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'end_time' cannot be null
+### The error may exist in com/scuop/locationservice/dao/LocationDao.java (best guess)
+### The error may involve com.scuop.locationservice.dao.LocationDao.update-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE location  SET start_time=?,end_time=?,location_name=?,description=?      WHERE (route_id = ? AND order_id = ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'end_time' cannot be null
+; Column 'end_time' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'end_time' cannot be null
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:87) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy96.update(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:64) ~[mybatis-plus-core-3.5.3.jar:3.5.3]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.5.3.jar:3.5.3]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.3.jar:3.5.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy103.update(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.24.jar:5.3.24]
+	at jdk.proxy2/jdk.proxy2.$Proxy104.update(Unknown Source) ~[na:na]
+	at com.scuop.locationservice.service.serviceImpl.LocationService.updateByRouteOrder(LocationService.java:130) ~[classes/:na]
+	at com.scuop.locationservice.service.serviceImpl.LocationService$$FastClassBySpringCGLIB$$15aa6b0b.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.24.jar:5.3.24]
+	at com.scuop.locationservice.service.serviceImpl.LocationService$$EnhancerBySpringCGLIB$$c3ff2f6e.updateByRouteOrder(<generated>) ~[classes/:na]
+	at com.scuop.locationservice.controller.LocationController.chageLocation(LocationController.java:140) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:699) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'end_time' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-j-8.0.31.jar:8.0.31]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.31.jar:8.0.31]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354) ~[mysql-connector-j-8.0.31.jar:8.0.31]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.10.jar:3.5.10]
+	at jdk.proxy3/jdk.proxy3.$Proxy136.execute(Unknown Source) ~[na:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194) ~[mybatis-3.5.10.jar:3.5.10]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	... 71 common frames omitted
+
+2023-01-16 21:38:14.080  INFO 26892 --- [main] c.s.l.LocationserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 21:38:14.624  INFO 26892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 21:38:14.627  INFO 26892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 21:38:14.647  INFO 26892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 21:38:14.827  INFO 26892 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5afbce84-78c5-3b8c-bddb-5d3ffaecb2d1
+2023-01-16 21:38:15.237  INFO 26892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-01-16 21:38:15.250  INFO 26892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 21:38:15.251  INFO 26892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 21:38:15.397  INFO 26892 --- [main] o.a.c.c.C.[.[localhost].[/location]      : Initializing Spring embedded WebApplicationContext
+2023-01-16 21:38:15.398  INFO 26892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1293 ms
+2023-01-16 21:38:16.044  INFO 26892 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 21:38:18.420  INFO 26892 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:38:19.638  INFO 26892 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:38:19.683  INFO 26892 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 21:38:19.683  INFO 26892 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 21:38:19.684  INFO 26892 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 21:38:19.760  INFO 26892 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 21:38:19.768  INFO 26892 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 21:38:19.790  INFO 26892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/location'
+2023-01-16 21:38:19.802  INFO 26892 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8082, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@locationservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 21:38:19.803  INFO 26892 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@locationservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 21:38:19.807  INFO 26892 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP locationservice 169.254.148.54:8082 register finished
+2023-01-16 21:38:20.325  INFO 26892 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673876300324,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":35367561242500} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:38:20.853  INFO 26892 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:38:20.860  INFO 26892 --- [main] c.s.l.LocationserviceApplication         : Started LocationserviceApplication in 9.886 seconds (JVM running for 10.251)
+2023-01-16 21:38:20.865  INFO 26892 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 21:38:20.865  INFO 26892 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:38:20.866  INFO 26892 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 21:38:20.866  INFO 26892 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice.yaml+DEFAULT_GROUP
+2023-01-16 21:38:20.867  INFO 26892 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:38:20.867  INFO 26892 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice.yaml, group=DEFAULT_GROUP
+2023-01-16 21:38:20.867  INFO 26892 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice+DEFAULT_GROUP
+2023-01-16 21:38:20.867  INFO 26892 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:38:20.868  INFO 26892 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice, group=DEFAULT_GROUP
+2023-01-16 21:38:27.414  INFO 26892 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/location]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 21:38:27.415  INFO 26892 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 21:38:27.416  INFO 26892 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 21:38:27.532  INFO 26892 --- [http-nio-8082-exec-1] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 21:38:27.537  INFO 26892 --- [http-nio-8082-exec-1] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 21:38:27.615 ERROR 26892 --- [http-nio-8082-exec-1] c.s.l.util.GlobalExceptionAdvice         : Cannot invoke "String.isBlank()" because the return value of "com.scuop.locationservice.domain.Location.getLocationName()" is null
+
+java.lang.NullPointerException: Cannot invoke "String.isBlank()" because the return value of "com.scuop.locationservice.domain.Location.getLocationName()" is null
+	at com.scuop.locationservice.service.serviceImpl.LocationService.updateByRouteOrder(LocationService.java:119) ~[classes/:na]
+	at com.scuop.locationservice.service.serviceImpl.LocationService$$FastClassBySpringCGLIB$$15aa6b0b.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.24.jar:5.3.24]
+	at com.scuop.locationservice.service.serviceImpl.LocationService$$EnhancerBySpringCGLIB$$b80bbeb6.updateByRouteOrder(<generated>) ~[classes/:na]
+	at com.scuop.locationservice.controller.LocationController.chageLocation(LocationController.java:140) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:699) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-01-16 21:38:28.089  INFO 26892 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673876308088,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":35375325470300} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:38:30.340  INFO 26892 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673876300324,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":35367561242500} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:38:30.341  WARN 26892 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673876300776, new-t: 1673876300324
+2023-01-16 21:38:38.092  INFO 26892 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673876308088,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":35375325470300} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:38:38.094  WARN 26892 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673876308542, new-t: 1673876308088
+2023-01-16 21:39:07.289  INFO 34764 --- [main] c.s.l.LocationserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 21:39:07.861  INFO 34764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 21:39:07.863  INFO 34764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 21:39:07.882  INFO 34764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 21:39:08.073  INFO 34764 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5afbce84-78c5-3b8c-bddb-5d3ffaecb2d1
+2023-01-16 21:39:08.483  INFO 34764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-01-16 21:39:08.494  INFO 34764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 21:39:08.495  INFO 34764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 21:39:08.646  INFO 34764 --- [main] o.a.c.c.C.[.[localhost].[/location]      : Initializing Spring embedded WebApplicationContext
+2023-01-16 21:39:08.646  INFO 34764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1328 ms
+2023-01-16 21:39:09.292  INFO 34764 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 21:39:11.607  INFO 34764 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:39:12.803  INFO 34764 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:39:12.852  INFO 34764 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 21:39:12.853  INFO 34764 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 21:39:12.853  INFO 34764 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 21:39:12.931  INFO 34764 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 21:39:12.938  INFO 34764 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@locationservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice","ip":"169.254.148.54","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@locationservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 21:39:12.964  INFO 34764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/location'
+2023-01-16 21:39:12.975  INFO 34764 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8082, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@locationservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 21:39:12.977  INFO 34764 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@locationservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 21:39:12.981  INFO 34764 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP locationservice 169.254.148.54:8082 register finished
+2023-01-16 21:39:13.477  INFO 34764 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673876353476,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":35420713902500} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:39:14.020  INFO 34764 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:39:14.028  INFO 34764 --- [main] c.s.l.LocationserviceApplication         : Started LocationserviceApplication in 9.767 seconds (JVM running for 10.095)
+2023-01-16 21:39:14.032  INFO 34764 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 21:39:14.033  INFO 34764 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:39:14.033  INFO 34764 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 21:39:14.034  INFO 34764 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice.yaml+DEFAULT_GROUP
+2023-01-16 21:39:14.034  INFO 34764 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:39:14.034  INFO 34764 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice.yaml, group=DEFAULT_GROUP
+2023-01-16 21:39:14.035  INFO 34764 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] locationservice+DEFAULT_GROUP
+2023-01-16 21:39:14.035  INFO 34764 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=locationservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:39:14.035  INFO 34764 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=locationservice, group=DEFAULT_GROUP
+2023-01-16 21:39:15.318  INFO 34764 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[localhost].[/location]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 21:39:15.319  INFO 34764 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 21:39:15.320  INFO 34764 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 21:39:15.415  INFO 34764 --- [http-nio-8082-exec-1] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 21:39:15.420  INFO 34764 --- [http-nio-8082-exec-1] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 21:39:15.528  INFO 34764 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-16 21:39:15.711  INFO 34764 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-16 21:39:15.987  INFO 34764 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673876355987,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":35423223886000} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:39:23.493  INFO 34764 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@locationservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8082#DEFAULT#DEFAULT_GROUP@@locationservice\",\"ip\":\"169.254.148.54\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@locationservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673876353476,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":35420713902500} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:39:23.494  WARN 34764 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673876353943, new-t: 1673876353476
+2023-01-16 21:39:26.003  INFO 34764 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673876355987,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":35423223886000} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:39:26.004  WARN 34764 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673876356424, new-t: 1673876355987

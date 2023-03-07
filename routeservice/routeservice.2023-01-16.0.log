@@ -1,0 +1,903 @@
+2023-01-16 13:45:37.311  INFO 20808 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 13:45:37.793  INFO 20808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 13:45:37.796  INFO 20808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 13:45:37.817  INFO 20808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 13:45:38.022  INFO 20808 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bfb0a758-1a88-3dc2-9d22-8fbf51e52d04
+2023-01-16 13:45:38.417  INFO 20808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 13:45:38.440  INFO 20808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 13:45:38.441  INFO 20808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 13:45:38.555  INFO 20808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 13:45:38.555  INFO 20808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1226 ms
+2023-01-16 13:45:40.715  INFO 20808 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 13:45:41.886  INFO 20808 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 13:45:41.911  INFO 20808 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 13:45:41.911  INFO 20808 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 13:45:41.912  INFO 20808 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 13:45:42.025  INFO 20808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-01-16 13:45:42.035  INFO 20808 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 13:45:42.035  INFO 20808 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@routeservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8083, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 13:45:42.048  INFO 20808 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP routeservice 169.254.148.54:8083 register finished
+2023-01-16 13:45:42.569  INFO 20808 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673847942559,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":7009796496600} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 13:45:42.580  INFO 20808 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-01-16 13:45:42.588  INFO 20808 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-01-16 13:45:43.101  INFO 20808 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 13:45:43.107  INFO 20808 --- [main] c.s.r.RouteserviceApplication            : Started RouteserviceApplication in 9.076 seconds (JVM running for 9.412)
+2023-01-16 13:45:43.114  INFO 20808 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 13:45:43.115  INFO 20808 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 13:45:43.115  INFO 20808 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 13:45:43.115  INFO 20808 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice+DEFAULT_GROUP
+2023-01-16 13:45:43.116  INFO 20808 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 13:45:43.117  INFO 20808 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice, group=DEFAULT_GROUP
+2023-01-16 13:45:43.117  INFO 20808 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice.yaml+DEFAULT_GROUP
+2023-01-16 13:45:43.117  INFO 20808 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 13:45:43.117  INFO 20808 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice.yaml, group=DEFAULT_GROUP
+2023-01-16 13:45:52.577  INFO 20808 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673847942559,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":7009796496600} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 13:45:52.578  WARN 20808 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673847943027, new-t: 1673847942559
+2023-01-16 15:06:49.947  INFO 33364 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 15:06:50.524  INFO 33364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 15:06:50.528  INFO 33364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 15:06:50.553  INFO 33364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-01-16 15:06:50.728  INFO 33364 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f53470c8-a3d3-337e-9acc-e169be3b5805
+2023-01-16 15:06:51.163  INFO 33364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 15:06:51.175  INFO 33364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 15:06:51.177  INFO 33364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 15:06:51.310  INFO 33364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 15:06:51.310  INFO 33364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1350 ms
+2023-01-16 15:06:51.819  WARN 33364 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+2023-01-16 15:06:51.824  INFO 33364 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-16 15:06:51.840  INFO 33364 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-16 15:06:51.874 ERROR 33364 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:720) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.scuop.routeservice.RouteserviceApplication.main(RouteserviceApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:760) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 36 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 50 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 64 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springdoc.webmvc.ui.SwaggerConfig.swaggerWelcome(SwaggerConfig.java:83) ~[springdoc-openapi-starter-webmvc-ui-2.0.2.jar:2.0.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.HttpStatusCode
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 69 common frames omitted
+
+2023-01-16 15:06:51.885  WARN 33364 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2023-01-16 15:07:26.683  INFO 33352 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 15:07:27.193  INFO 33352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 15:07:27.196  INFO 33352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 15:07:27.220  INFO 33352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 15:07:27.376  INFO 33352 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f53470c8-a3d3-337e-9acc-e169be3b5805
+2023-01-16 15:07:27.734  INFO 33352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 15:07:27.742  INFO 33352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 15:07:27.742  INFO 33352 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 15:07:27.861  INFO 33352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 15:07:27.862  INFO 33352 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1155 ms
+2023-01-16 15:07:28.318  WARN 33352 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+2023-01-16 15:07:28.322  INFO 33352 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-16 15:07:28.334  INFO 33352 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-16 15:07:28.364 ERROR 33352 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:720) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.scuop.routeservice.RouteserviceApplication.main(RouteserviceApplication.java:13) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:760) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 36 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 50 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 64 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springdoc.webmvc.ui.SwaggerConfig.swaggerWelcome(SwaggerConfig.java:83) ~[springdoc-openapi-starter-webmvc-ui-2.0.2.jar:2.0.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.HttpStatusCode
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 69 common frames omitted
+
+2023-01-16 15:07:28.376  WARN 33352 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2023-01-16 15:09:39.761  INFO 32080 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 15:09:40.248  INFO 32080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 15:09:40.252  INFO 32080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 15:09:40.274  INFO 32080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 15:09:40.420  INFO 32080 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f53470c8-a3d3-337e-9acc-e169be3b5805
+2023-01-16 15:09:40.788  INFO 32080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 15:09:40.795  INFO 32080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 15:09:40.796  INFO 32080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 15:09:40.923  INFO 32080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 15:09:40.924  INFO 32080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1138 ms
+2023-01-16 15:09:41.378  WARN 32080 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+2023-01-16 15:09:41.382  INFO 32080 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-16 15:09:41.397  INFO 32080 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-16 15:09:41.427 ERROR 32080 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:720) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.scuop.routeservice.RouteserviceApplication.main(RouteserviceApplication.java:13) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:760) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 36 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 50 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc]: Factory method 'swaggerWelcome' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 64 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/http/HttpStatusCode
+	at org.springdoc.webmvc.ui.SwaggerConfig.swaggerWelcome(SwaggerConfig.java:83) ~[springdoc-openapi-starter-webmvc-ui-2.0.0.jar:2.0.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.HttpStatusCode
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 69 common frames omitted
+
+2023-01-16 15:09:41.438  WARN 32080 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2023-01-16 15:10:39.069  INFO 9524 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 15:10:39.563  INFO 9524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 15:10:39.565  INFO 9524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 15:10:39.583  INFO 9524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-01-16 15:10:39.734  INFO 9524 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7ad3e18c-d307-3141-9f59-03b715395f52
+2023-01-16 15:10:40.079  INFO 9524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 15:10:40.086  INFO 9524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 15:10:40.087  INFO 9524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 15:10:40.202  INFO 9524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 15:10:40.202  INFO 9524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1112 ms
+2023-01-16 15:10:42.781  INFO 9524 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 15:10:43.998  INFO 9524 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 15:10:44.027  INFO 9524 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 15:10:44.027  INFO 9524 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 15:10:44.028  INFO 9524 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 15:10:44.116  INFO 9524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-01-16 15:10:44.126  INFO 9524 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 15:10:44.127  INFO 9524 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@routeservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8083, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 15:10:44.134  INFO 9524 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP routeservice 169.254.148.54:8083 register finished
+2023-01-16 15:10:44.674  INFO 9524 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673853044671,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":12111908643100} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 15:10:44.684  INFO 9524 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 15:10:44.692  INFO 9524 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 15:10:45.175  INFO 9524 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 15:10:45.182  INFO 9524 --- [main] c.s.r.RouteserviceApplication            : Started RouteserviceApplication in 9.11 seconds (JVM running for 9.52)
+2023-01-16 15:10:45.189  INFO 9524 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 15:10:45.191  INFO 9524 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 15:10:45.191  INFO 9524 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 15:10:45.191  INFO 9524 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice+DEFAULT_GROUP
+2023-01-16 15:10:45.191  INFO 9524 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 15:10:45.191  INFO 9524 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice, group=DEFAULT_GROUP
+2023-01-16 15:10:45.192  INFO 9524 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice.yaml+DEFAULT_GROUP
+2023-01-16 15:10:45.192  INFO 9524 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 15:10:45.192  INFO 9524 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice.yaml, group=DEFAULT_GROUP
+2023-01-16 15:10:54.675  INFO 9524 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673853044671,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":12111908643100} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 15:10:54.676  WARN 9524 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673853045112, new-t: 1673853044671
+2023-01-16 15:11:19.420  INFO 9524 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 15:11:19.421  INFO 9524 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 15:11:19.423  INFO 9524 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-01-16 15:11:19.628  INFO 9524 --- [http-nio-8083-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 178 ms
+2023-01-16 17:43:56.137  INFO 25792 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 17:43:56.611  INFO 25792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 17:43:56.613  INFO 25792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 17:43:56.631  INFO 25792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-01-16 17:43:56.790  INFO 25792 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7ad3e18c-d307-3141-9f59-03b715395f52
+2023-01-16 17:43:57.134  INFO 25792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 17:43:57.145  INFO 25792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 17:43:57.146  INFO 25792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 17:43:57.277  INFO 25792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 17:43:57.277  INFO 25792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1120 ms
+2023-01-16 17:43:59.981  INFO 25792 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:44:01.215  INFO 25792 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:44:01.240  INFO 25792 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 17:44:01.241  INFO 25792 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 17:44:01.241  INFO 25792 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 17:44:01.322  INFO 25792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-01-16 17:44:01.330  INFO 25792 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 17:44:01.331  INFO 25792 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@routeservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8083, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 17:44:01.334  INFO 25792 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP routeservice 169.254.148.54:8083 register finished
+2023-01-16 17:44:01.871  INFO 25792 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673862241870,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":21309107971000} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 17:44:01.885  INFO 25792 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 17:44:01.893  INFO 25792 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 17:44:02.385  INFO 25792 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:44:02.393  INFO 25792 --- [main] c.s.r.RouteserviceApplication            : Started RouteserviceApplication in 9.319 seconds (JVM running for 9.711)
+2023-01-16 17:44:02.400  INFO 25792 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 17:44:02.401  INFO 25792 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:44:02.402  INFO 25792 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 17:44:02.402  INFO 25792 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice+DEFAULT_GROUP
+2023-01-16 17:44:02.402  INFO 25792 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:44:02.402  INFO 25792 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice, group=DEFAULT_GROUP
+2023-01-16 17:44:02.404  INFO 25792 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice.yaml+DEFAULT_GROUP
+2023-01-16 17:44:02.404  INFO 25792 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:44:02.404  INFO 25792 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice.yaml, group=DEFAULT_GROUP
+2023-01-16 17:44:03.992  INFO 25792 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 17:44:03.992  INFO 25792 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 17:44:03.993  INFO 25792 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-01-16 17:44:04.427  INFO 25792 --- [http-nio-8083-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 179 ms
+2023-01-16 17:44:11.884  INFO 25792 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673862241870,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":21309107971000} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 17:44:11.885  WARN 25792 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673862242310, new-t: 1673862241870
+2023-01-16 18:20:53.308  INFO 33012 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 18:20:53.881  INFO 33012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 18:20:53.883  INFO 33012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 18:20:53.901  INFO 33012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 18:20:54.088  INFO 33012 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7ad3e18c-d307-3141-9f59-03b715395f52
+2023-01-16 18:20:54.507  INFO 33012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 18:20:54.517  INFO 33012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 18:20:54.518  INFO 33012 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 18:20:54.672  INFO 33012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 18:20:54.672  INFO 33012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1343 ms
+2023-01-16 18:20:57.372  INFO 33012 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:20:58.561  INFO 33012 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:20:58.593  INFO 33012 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:20:58.594  INFO 33012 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 18:20:58.595  INFO 33012 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:20:58.676  INFO 33012 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 18:20:58.684  INFO 33012 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 18:20:58.706  INFO 33012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-01-16 18:20:58.714  INFO 33012 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:20:58.716  INFO 33012 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@routeservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8083, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 18:20:58.720  INFO 33012 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP routeservice 169.254.148.54:8083 register finished
+2023-01-16 18:20:59.140  INFO 33012 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673864459139,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":23526375985200} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:20:59.144  INFO 33012 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:20:59.145  INFO 33012 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : modified ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 18:20:59.151  INFO 33012 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 18:20:59.762  INFO 33012 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:20:59.773  INFO 33012 --- [main] c.s.r.RouteserviceApplication            : Started RouteserviceApplication in 9.463 seconds (JVM running for 9.794)
+2023-01-16 18:20:59.782  INFO 33012 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 18:20:59.783  INFO 33012 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:20:59.783  INFO 33012 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 18:20:59.784  INFO 33012 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice+DEFAULT_GROUP
+2023-01-16 18:20:59.784  INFO 33012 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:20:59.784  INFO 33012 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice, group=DEFAULT_GROUP
+2023-01-16 18:20:59.785  INFO 33012 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice.yaml+DEFAULT_GROUP
+2023-01-16 18:20:59.785  INFO 33012 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:20:59.785  INFO 33012 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice.yaml, group=DEFAULT_GROUP
+2023-01-16 18:21:09.147  INFO 33012 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673864459139,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":23526375985200} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:21:09.149  WARN 33012 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673864459701, new-t: 1673864459139
+2023-01-16 18:21:54.639  INFO 13816 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 18:21:55.149  INFO 13816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 18:21:55.151  INFO 13816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 18:21:55.168  INFO 13816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 18:21:55.328  INFO 13816 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7ad3e18c-d307-3141-9f59-03b715395f52
+2023-01-16 18:21:55.739  INFO 13816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 18:21:55.752  INFO 13816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 18:21:55.754  INFO 13816 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 18:21:55.924  INFO 13816 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 18:21:55.924  INFO 13816 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1260 ms
+2023-01-16 18:21:58.804  INFO 13816 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:59.991  INFO 13816 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:22:00.021  INFO 13816 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:22:00.021  INFO 13816 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 18:22:00.022  INFO 13816 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:22:00.090  INFO 13816 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:22:00.097  INFO 13816 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:22:00.113  INFO 13816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-01-16 18:22:00.120  INFO 13816 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:22:00.121  INFO 13816 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@routeservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8083, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 18:22:00.123  INFO 13816 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP routeservice 169.254.148.54:8083 register finished
+2023-01-16 18:22:00.599  INFO 13816 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673864520599,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":23587836505600} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:22:00.603  INFO 13816 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:22:00.603  INFO 13816 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : modified ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:22:00.608  INFO 13816 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:22:01.161  INFO 13816 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:22:01.169  INFO 13816 --- [main] c.s.r.RouteserviceApplication            : Started RouteserviceApplication in 10.005 seconds (JVM running for 10.632)
+2023-01-16 18:22:01.175  INFO 13816 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 18:22:01.176  INFO 13816 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:22:01.177  INFO 13816 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 18:22:01.177  INFO 13816 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice+DEFAULT_GROUP
+2023-01-16 18:22:01.177  INFO 13816 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:22:01.178  INFO 13816 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice, group=DEFAULT_GROUP
+2023-01-16 18:22:01.178  INFO 13816 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice.yaml+DEFAULT_GROUP
+2023-01-16 18:22:01.178  INFO 13816 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:22:01.178  INFO 13816 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice.yaml, group=DEFAULT_GROUP
+2023-01-16 18:22:10.614  INFO 13816 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673864520599,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":23587836505600} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:22:10.615  WARN 13816 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673864521100, new-t: 1673864520599
+2023-01-16 18:37:59.769  INFO 29900 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 18:38:00.294  INFO 29900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 18:38:00.296  INFO 29900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 18:38:00.314  INFO 29900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-01-16 18:38:00.464  INFO 29900 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7ad3e18c-d307-3141-9f59-03b715395f52
+2023-01-16 18:38:00.832  INFO 29900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 18:38:00.840  INFO 29900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 18:38:00.841  INFO 29900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 18:38:00.971  INFO 29900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 18:38:00.972  INFO 29900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1179 ms
+2023-01-16 18:38:03.571  INFO 29900 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:38:04.787  INFO 29900 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:38:04.814  INFO 29900 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:38:04.815  INFO 29900 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 18:38:04.815  INFO 29900 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:38:04.905  INFO 29900 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-01-16 18:38:04.918  INFO 29900 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-01-16 18:38:04.944  INFO 29900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-01-16 18:38:04.955  INFO 29900 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:38:04.957  INFO 29900 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@routeservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8083, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 18:38:04.960  INFO 29900 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP routeservice 169.254.148.54:8083 register finished
+2023-01-16 18:38:05.363  INFO 29900 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673865485361,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":24552598978900} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:38:05.366  INFO 29900 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:38:05.367  INFO 29900 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : modified ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-01-16 18:38:05.373  INFO 29900 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-01-16 18:38:06.003  INFO 29900 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:38:06.010  INFO 29900 --- [main] c.s.r.RouteserviceApplication            : Started RouteserviceApplication in 9.234 seconds (JVM running for 9.566)
+2023-01-16 18:38:06.014  INFO 29900 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 18:38:06.015  INFO 29900 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:38:06.015  INFO 29900 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 18:38:06.015  INFO 29900 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice+DEFAULT_GROUP
+2023-01-16 18:38:06.015  INFO 29900 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:38:06.016  INFO 29900 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice, group=DEFAULT_GROUP
+2023-01-16 18:38:06.016  INFO 29900 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice.yaml+DEFAULT_GROUP
+2023-01-16 18:38:06.016  INFO 29900 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:38:06.016  INFO 29900 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice.yaml, group=DEFAULT_GROUP
+2023-01-16 18:38:15.363  INFO 29900 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673865485361,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":24552598978900} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:38:15.364  WARN 29900 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673865485927, new-t: 1673865485361
+2023-01-16 18:38:21.714  INFO 29900 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 18:38:21.714  INFO 29900 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 18:38:21.715  INFO 29900 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 18:41:10.950  INFO 29900 --- [http-nio-8083-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 162 ms
+2023-01-16 18:44:37.055  INFO 35400 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 18:44:37.524  INFO 35400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 18:44:37.526  INFO 35400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 18:44:37.542  INFO 35400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 18:44:37.693  INFO 35400 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7ad3e18c-d307-3141-9f59-03b715395f52
+2023-01-16 18:44:38.069  INFO 35400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 18:44:38.078  INFO 35400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 18:44:38.078  INFO 35400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 18:44:38.214  INFO 35400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 18:44:38.215  INFO 35400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1138 ms
+2023-01-16 18:44:41.042  INFO 35400 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:44:42.242  INFO 35400 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:44:42.267  INFO 35400 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:44:42.268  INFO 35400 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 18:44:42.268  INFO 35400 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:44:42.355  INFO 35400 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 18:44:42.362  INFO 35400 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 18:44:42.384  INFO 35400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-01-16 18:44:42.392  INFO 35400 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:44:42.394  INFO 35400 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@routeservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8083, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 18:44:42.397  INFO 35400 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP routeservice 169.254.148.54:8083 register finished
+2023-01-16 18:44:42.911  INFO 35400 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673865882910,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":24950146783500} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:44:43.443  INFO 35400 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:44:43.452  INFO 35400 --- [main] c.s.r.RouteserviceApplication            : Started RouteserviceApplication in 9.402 seconds (JVM running for 9.736)
+2023-01-16 18:44:43.458  INFO 35400 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 18:44:43.459  INFO 35400 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:44:43.459  INFO 35400 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 18:44:43.459  INFO 35400 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice+DEFAULT_GROUP
+2023-01-16 18:44:43.460  INFO 35400 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:44:43.460  INFO 35400 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice, group=DEFAULT_GROUP
+2023-01-16 18:44:43.460  INFO 35400 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice.yaml+DEFAULT_GROUP
+2023-01-16 18:44:43.460  INFO 35400 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:44:43.461  INFO 35400 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice.yaml, group=DEFAULT_GROUP
+2023-01-16 18:44:44.211  INFO 35400 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 18:44:44.212  INFO 35400 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 18:44:44.213  INFO 35400 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 18:44:52.911  INFO 35400 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673865882910,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":24950146783500} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:44:52.913  WARN 35400 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673865883367, new-t: 1673865882910
+2023-01-16 18:44:53.122  INFO 35400 --- [http-nio-8083-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 177 ms
+2023-01-16 18:48:38.662  INFO 2000 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 18:48:39.182  INFO 2000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 18:48:39.184  INFO 2000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 18:48:39.202  INFO 2000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-01-16 18:48:39.370  INFO 2000 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7ad3e18c-d307-3141-9f59-03b715395f52
+2023-01-16 18:48:39.747  INFO 2000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 18:48:39.760  INFO 2000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 18:48:39.760  INFO 2000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 18:48:39.899  INFO 2000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 18:48:39.900  INFO 2000 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1216 ms
+2023-01-16 18:48:42.496  INFO 2000 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:48:43.714  INFO 2000 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:48:43.741  INFO 2000 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:48:43.741  INFO 2000 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 18:48:43.742  INFO 2000 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:48:43.835  INFO 2000 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:48:43.844  INFO 2000 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:48:43.868  INFO 2000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-01-16 18:48:43.879  INFO 2000 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:48:43.880  INFO 2000 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@routeservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8083, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 18:48:43.884  INFO 2000 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP routeservice 169.254.148.54:8083 register finished
+2023-01-16 18:48:44.294  INFO 2000 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673866124293,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":25191529942500} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:48:44.940  INFO 2000 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:48:44.948  INFO 2000 --- [main] c.s.r.RouteserviceApplication            : Started RouteserviceApplication in 9.236 seconds (JVM running for 9.558)
+2023-01-16 18:48:44.952  INFO 2000 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 18:48:44.953  INFO 2000 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:48:44.953  INFO 2000 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 18:48:44.953  INFO 2000 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice+DEFAULT_GROUP
+2023-01-16 18:48:44.953  INFO 2000 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:48:44.953  INFO 2000 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice, group=DEFAULT_GROUP
+2023-01-16 18:48:44.954  INFO 2000 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice.yaml+DEFAULT_GROUP
+2023-01-16 18:48:44.954  INFO 2000 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:48:44.954  INFO 2000 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice.yaml, group=DEFAULT_GROUP
+2023-01-16 18:48:54.298  INFO 2000 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673866124293,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":25191529942500} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:48:54.300  WARN 2000 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673866124862, new-t: 1673866124293
+2023-01-16 19:03:59.115  INFO 2000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [polling-resp] config changed. dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 19:03:59.115  INFO 2000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[routeservice-dev.yaml+DEFAULT_GROUP]
+2023-01-16 19:03:59.123  INFO 2000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [data-received] dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, tenant=null, md5=e3ec5aeb5053ef9867a04d747480e746, content=server:
+  port: 8083
+server:
+  servlet:
+    context-path: route
+
+spring:
+  # 数据库配置
+  datasource:
+   ..., type=yaml
+2023-01-16 19:03:59.125  INFO 2000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [notify-context] dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, md5=e3ec5aeb5053ef9867a04d747480e746
+2023-01-16 19:04:00.182  INFO 2000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:04:00.238  WARN 2000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[routeservice] & group[DEFAULT_GROUP]
+2023-01-16 19:04:00.240  WARN 2000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[routeservice.yaml] & group[DEFAULT_GROUP]
+2023-01-16 19:04:00.249 ERROR 2000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.c.n.c.NacosPropertySourceBuilder     : parse data from Nacos error,dataId:routeservice-dev.yaml,data:server:
+  port: 8083
+server:
+  servlet:
+    context-path: route
+
+spring:
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: "#Wdl200210"
+    url: jdbc:mysql:///lxj_route
+  # redis配置
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 10s
+    lettuce:
+      pool:
+        max-active: 200
+        max-wait: -1ms
+        max-idle: 10
+        min-idle: 0
+
+# sa-token配置
+sa-token: 
+  # token名称 (同时也是cookie名称)
+  token-name: token
+#   # token有效期，单位s 默认30天, -1代表永不过期 
+#   timeout: 2592000
+#   # token临时有效期 (指定时间内无操作就视为token过期) 单位: 秒
+#   activity-timeout: -1
+  # 是否允许同一账号并发登录 (为true时允许一起登录, 为false时新登录挤掉旧登录) 
+  is-concurrent: false
+  # 在多人登录同一账号时，是否共用一个token (为true时所有登录共用一个token, 为false时每次登录新建一个token) 
+  is-share: true
+#   # token风格
+#   token-style: uuid
+#     # 是否输出操作日志 
+  is-log: true
+
+# mp配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 日志
+logging:
+  file:
+    name: routeservice.log
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+      file-name-pattern: routeservice.%d{yyyy-MM-dd}.%i.log
+
+org.yaml.snakeyaml.constructor.DuplicateKeyException: while constructing a mapping
+ in 'reader', line 1, column 1:
+    server:
+    ^
+found duplicate key server
+ in 'reader', line 3, column 1:
+    server:
+    ^
+
+	at org.yaml.snakeyaml.constructor.SafeConstructor.processDuplicateKeys(SafeConstructor.java:105) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.SafeConstructor.flattenMapping(SafeConstructor.java:76) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.SafeConstructor.constructMapping2ndStep(SafeConstructor.java:189) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping(BaseConstructor.java:461) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.SafeConstructor$ConstructYamlMap.construct(SafeConstructor.java:556) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObjectNoCheck(BaseConstructor.java:230) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:220) ~[snakeyaml-1.30.jar:na]
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.constructObject(OriginTrackedYamlLoader.java:123) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:174) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:139) ~[snakeyaml-1.30.jar:na]
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:103) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:514) ~[snakeyaml-1.30.jar:na]
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:198) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:88) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.alibaba.cloud.nacos.parser.NacosDataParserHandler.parseNacosData(NacosDataParserHandler.java:92) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:97) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:73) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:199) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:186) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:149) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:47) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:604) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.cloud.context.refresh.LegacyContextRefresher.addConfigFilesToEnvironment(LegacyContextRefresher.java:78) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.context.refresh.LegacyContextRefresher.updateEnvironment(LegacyContextRefresher.java:56) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.context.refresh.ContextRefresher.refreshEnvironment(ContextRefresher.java:101) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.context.refresh.ContextRefresher.refresh(ContextRefresher.java:94) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.handle(RefreshEventListener.java:72) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.onApplicationEvent(RefreshEventListener.java:61) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.24.jar:5.3.24]
+	at com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1.innerReceive(NacosContextRefresher.java:120) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.nacos.api.config.listener.AbstractSharedListener.receiveConfigInfo(AbstractSharedListener.java:40) ~[nacos-api-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.CacheData$1.run(CacheData.java:210) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.CacheData.safeNotifyListener(CacheData.java:241) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.CacheData.checkListenerMd5(CacheData.java:180) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:569) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-01-16 19:04:00.258  INFO 2000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-routeservice-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-routeservice.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-routeservice,DEFAULT_GROUP'}]
+2023-01-16 19:04:00.260  INFO 2000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.boot.SpringApplication               : The following 1 profile is active: "dev"
+2023-01-16 19:04:00.268  INFO 2000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.boot.SpringApplication               : Started application in 1.139 seconds (JVM running for 924.879)
+2023-01-16 19:04:00.300  INFO 2000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.c.e.event.RefreshEventListener       : Refresh keys changed: [spring.redis.lettuce.pool.max-active, spring.redis.lettuce.pool.max-idle, sa-token.is-log, mybatis-plus.configuration.log-impl, spring.redis.host, logging.file.name, spring.redis.port, logging.logback.rollingpolicy.file-name-pattern, spring.datasource.password, spring.datasource.driver-class-name, sa-token.token-name, sa-token.is-share, spring.redis.lettuce.pool.min-idle, spring.datasource.username, spring.datasource.url, server.port, sa-token.is-concurrent, spring.redis.timeout, spring.redis.lettuce.pool.max-wait, logging.logback.rollingpolicy.max-file-size]
+2023-01-16 19:07:03.594  INFO 34184 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 19:07:04.101  INFO 34184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 19:07:04.103  INFO 34184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 19:07:04.121  INFO 34184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-01-16 19:07:04.278  INFO 34184 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7ad3e18c-d307-3141-9f59-03b715395f52
+2023-01-16 19:07:04.505  WARN 34184 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+2023-01-16 19:07:04.514  INFO 34184 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-16 19:07:04.535 ERROR 34184 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.scuop.routeservice.RouteserviceApplication.main(RouteserviceApplication.java:13) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:219) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.7.7.jar:2.7.7]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:140) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:129) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:291) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:76) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:41) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:72) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:287) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:159) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:286) ~[spring-boot-2.7.7.jar:2.7.7]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1092) ~[na:na]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:286) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:72) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:58) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 16 common frames omitted
+
+2023-01-16 19:07:04.540  WARN 34184 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2023-01-16 19:08:29.671  INFO 31644 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 19:08:30.770  INFO 31644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 19:08:30.775  INFO 31644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 19:08:30.820  INFO 31644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2023-01-16 19:08:31.395  INFO 31644 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7ad3e18c-d307-3141-9f59-03b715395f52
+2023-01-16 19:08:31.880  INFO 31644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 19:08:31.892  INFO 31644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 19:08:31.892  INFO 31644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 19:08:32.026  INFO 31644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/route]  : Initializing Spring embedded WebApplicationContext
+2023-01-16 19:08:32.027  INFO 31644 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2330 ms
+2023-01-16 19:08:35.198  INFO 31644 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:08:36.432  INFO 31644 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:08:36.464  INFO 31644 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 19:08:36.465  INFO 31644 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 19:08:36.466  INFO 31644 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 19:08:36.574  INFO 31644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path '/route'
+2023-01-16 19:08:36.585  INFO 31644 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 19:08:36.587  INFO 31644 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@routeservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8083, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 19:08:36.591  INFO 31644 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP routeservice 169.254.148.54:8083 register finished
+2023-01-16 19:08:37.031  INFO 31644 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673867317030,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":26384267574600} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 19:08:37.042  INFO 31644 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 19:08:37.049  INFO 31644 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 19:08:37.642  INFO 31644 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:08:37.650  INFO 31644 --- [main] c.s.r.RouteserviceApplication            : Started RouteserviceApplication in 12.428 seconds (JVM running for 12.852)
+2023-01-16 19:08:37.658  INFO 31644 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 19:08:37.660  INFO 31644 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:08:37.660  INFO 31644 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 19:08:37.660  INFO 31644 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice+DEFAULT_GROUP
+2023-01-16 19:08:37.661  INFO 31644 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:08:37.661  INFO 31644 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice, group=DEFAULT_GROUP
+2023-01-16 19:08:37.661  INFO 31644 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice.yaml+DEFAULT_GROUP
+2023-01-16 19:08:37.661  INFO 31644 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:08:37.661  INFO 31644 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice.yaml, group=DEFAULT_GROUP
+2023-01-16 19:08:47.038  INFO 31644 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673867317030,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":26384267574600} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 19:08:47.038  WARN 31644 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673867317549, new-t: 1673867317030
+2023-01-16 19:19:21.857  INFO 31644 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/route]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 19:19:21.857  INFO 31644 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 19:19:21.858  INFO 31644 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 19:19:22.062  INFO 31644 --- [http-nio-8083-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 173 ms
+2023-01-16 21:25:17.452  INFO 27144 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-16 21:25:18.016  INFO 27144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 21:25:18.018  INFO 27144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 21:25:18.037  INFO 27144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 21:25:18.207  INFO 27144 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7ad3e18c-d307-3141-9f59-03b715395f52
+2023-01-16 21:25:18.636  INFO 27144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-16 21:25:18.648  INFO 27144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 21:25:18.648  INFO 27144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 21:25:18.784  INFO 27144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/route]  : Initializing Spring embedded WebApplicationContext
+2023-01-16 21:25:18.784  INFO 27144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1312 ms
+2023-01-16 21:25:21.958  INFO 27144 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:25:23.159  INFO 27144 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:25:23.196  INFO 27144 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 21:25:23.197  INFO 27144 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 21:25:23.198  INFO 27144 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 21:25:23.307  INFO 27144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path '/route'
+2023-01-16 21:25:23.318  INFO 27144 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 21:25:23.319  INFO 27144 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@routeservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8083, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 21:25:23.324  INFO 27144 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP routeservice 169.254.148.54:8083 register finished
+2023-01-16 21:25:23.812  INFO 27144 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673875523810,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":34591047492500} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:25:23.827  INFO 27144 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 21:25:23.835  INFO 27144 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 21:25:24.373  INFO 27144 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 21:25:24.380  INFO 27144 --- [main] c.s.r.RouteserviceApplication            : Started RouteserviceApplication in 9.979 seconds (JVM running for 10.319)
+2023-01-16 21:25:24.389  INFO 27144 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 21:25:24.391  INFO 27144 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:25:24.391  INFO 27144 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 21:25:24.391  INFO 27144 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice+DEFAULT_GROUP
+2023-01-16 21:25:24.392  INFO 27144 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:25:24.392  INFO 27144 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice, group=DEFAULT_GROUP
+2023-01-16 21:25:24.392  INFO 27144 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice.yaml+DEFAULT_GROUP
+2023-01-16 21:25:24.392  INFO 27144 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 21:25:24.393  INFO 27144 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice.yaml, group=DEFAULT_GROUP
+2023-01-16 21:25:33.818  INFO 27144 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1673875523810,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":34591047492500} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 21:25:33.820  WARN 27144 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673875524297, new-t: 1673875523810
+2023-01-16 21:31:37.162  INFO 27144 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/route]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 21:31:37.162  INFO 27144 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 21:31:37.164  INFO 27144 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 21:31:37.226  INFO 27144 --- [http-nio-8083-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-16 21:31:37.470  INFO 27144 --- [http-nio-8083-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

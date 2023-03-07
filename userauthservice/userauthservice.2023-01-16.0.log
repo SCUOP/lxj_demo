@@ -1,0 +1,843 @@
+2023-01-16 16:53:21.704  INFO 29788 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 16:53:22.228  INFO 29788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 16:53:22.231  INFO 29788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 16:53:22.248  INFO 29788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 16:53:22.445  INFO 29788 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a679c7e9-6615-3e46-a5c2-1e4c228195fe
+2023-01-16 16:53:22.893  INFO 29788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-16 16:53:22.901  INFO 29788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 16:53:22.902  INFO 29788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 16:53:23.042  INFO 29788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 16:53:23.042  INFO 29788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1309 ms
+2023-01-16 16:53:23.747  INFO 29788 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 16:53:25.915  INFO 29788 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 16:53:27.090  INFO 29788 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 16:53:27.151  INFO 29788 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 16:53:27.152  INFO 29788 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 16:53:27.152  INFO 29788 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 16:53:27.234  INFO 29788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16 16:53:27.241  INFO 29788 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 16:53:27.242  INFO 29788 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@userauthservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 16:53:27.246  INFO 29788 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP userauthservice 169.254.148.54:8080 register finished
+2023-01-16 16:53:27.762  INFO 29788 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859207761,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18274998249300} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 16:53:27.775  INFO 29788 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 16:53:27.783  INFO 29788 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 16:53:28.288  INFO 29788 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 16:53:28.297  INFO 29788 --- [main] c.s.u.UserauthserviceApplication         : Started UserauthserviceApplication in 9.604 seconds (JVM running for 9.94)
+2023-01-16 16:53:28.300  INFO 29788 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice+DEFAULT_GROUP
+2023-01-16 16:53:28.301  INFO 29788 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 16:53:28.301  INFO 29788 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice, group=DEFAULT_GROUP
+2023-01-16 16:53:28.302  INFO 29788 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice.yaml+DEFAULT_GROUP
+2023-01-16 16:53:28.302  INFO 29788 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 16:53:28.302  INFO 29788 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice.yaml, group=DEFAULT_GROUP
+2023-01-16 16:53:28.308  INFO 29788 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 16:53:28.308  INFO 29788 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 16:53:28.309  INFO 29788 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 16:53:37.765  INFO 29788 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859207761,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18274998249300} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 16:53:37.767  WARN 29788 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673859208227, new-t: 1673859207761
+2023-01-16 16:53:39.720  INFO 29788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 16:53:39.720  INFO 29788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 16:53:39.721  INFO 29788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 16:53:40.196  INFO 29788 --- [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 214 ms
+2023-01-16 16:55:32.894  INFO 5852 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 16:55:33.379  INFO 5852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 16:55:33.384  INFO 5852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 16:55:33.406  INFO 5852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-01-16 16:55:33.572  INFO 5852 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a679c7e9-6615-3e46-a5c2-1e4c228195fe
+2023-01-16 16:55:33.939  INFO 5852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-16 16:55:33.951  INFO 5852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 16:55:33.951  INFO 5852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 16:55:34.106  INFO 5852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 16:55:34.106  INFO 5852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1187 ms
+2023-01-16 16:55:34.772  INFO 5852 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 16:55:36.882  INFO 5852 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 16:55:38.071  INFO 5852 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 16:55:38.120  INFO 5852 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 16:55:38.120  INFO 5852 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 16:55:38.120  INFO 5852 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 16:55:38.189  INFO 5852 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 16:55:38.196  INFO 5852 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 16:55:38.215  INFO 5852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16 16:55:38.222  INFO 5852 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 16:55:38.223  INFO 5852 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@userauthservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 16:55:38.225  INFO 5852 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP userauthservice 169.254.148.54:8080 register finished
+2023-01-16 16:55:38.715  INFO 5852 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859338714,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18405951102700} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 16:55:39.260  INFO 5852 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 16:55:39.269  INFO 5852 --- [main] c.s.u.UserauthserviceApplication         : Started UserauthserviceApplication in 9.363 seconds (JVM running for 9.753)
+2023-01-16 16:55:39.271  INFO 5852 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice+DEFAULT_GROUP
+2023-01-16 16:55:39.273  INFO 5852 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 16:55:39.273  INFO 5852 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice, group=DEFAULT_GROUP
+2023-01-16 16:55:39.273  INFO 5852 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice.yaml+DEFAULT_GROUP
+2023-01-16 16:55:39.274  INFO 5852 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 16:55:39.274  INFO 5852 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice.yaml, group=DEFAULT_GROUP
+2023-01-16 16:55:39.275  INFO 5852 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 16:55:39.276  INFO 5852 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 16:55:39.276  INFO 5852 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 16:55:44.266  INFO 5852 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 16:55:44.266  INFO 5852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 16:55:44.267  INFO 5852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-01-16 16:55:44.742  INFO 5852 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 195 ms
+2023-01-16 16:55:48.730  INFO 5852 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859338714,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18405951102700} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 16:55:48.731  WARN 5852 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673859339214, new-t: 1673859338714
+2023-01-16 16:56:18.550  INFO 34288 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 16:56:19.064  INFO 34288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 16:56:19.069  INFO 34288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 16:56:19.090  INFO 34288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 16:56:19.246  INFO 34288 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a679c7e9-6615-3e46-a5c2-1e4c228195fe
+2023-01-16 16:56:19.627  INFO 34288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-16 16:56:19.638  INFO 34288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 16:56:19.638  INFO 34288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 16:56:19.771  INFO 34288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 16:56:19.771  INFO 34288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1193 ms
+2023-01-16 16:56:20.423  INFO 34288 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 16:56:22.564  INFO 34288 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 16:56:23.798  INFO 34288 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 16:56:23.861  INFO 34288 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 16:56:23.862  INFO 34288 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 16:56:23.862  INFO 34288 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 16:56:23.937  INFO 34288 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 16:56:23.944  INFO 34288 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 16:56:23.965  INFO 34288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16 16:56:23.973  INFO 34288 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 16:56:23.975  INFO 34288 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@userauthservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 16:56:23.978  INFO 34288 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP userauthservice 169.254.148.54:8080 register finished
+2023-01-16 16:56:24.018  INFO 34288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 16:56:24.019  INFO 34288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 16:56:24.020  INFO 34288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 16:56:24.342  INFO 34288 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 186 ms
+2023-01-16 16:56:24.408  INFO 34288 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859384406,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18451643740300} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 16:56:25.031  INFO 34288 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 16:56:25.038  INFO 34288 --- [main] c.s.u.UserauthserviceApplication         : Started UserauthserviceApplication in 9.447 seconds (JVM running for 9.78)
+2023-01-16 16:56:25.042  INFO 34288 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice+DEFAULT_GROUP
+2023-01-16 16:56:25.043  INFO 34288 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 16:56:25.043  INFO 34288 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice, group=DEFAULT_GROUP
+2023-01-16 16:56:25.044  INFO 34288 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice.yaml+DEFAULT_GROUP
+2023-01-16 16:56:25.044  INFO 34288 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 16:56:25.044  INFO 34288 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice.yaml, group=DEFAULT_GROUP
+2023-01-16 16:56:25.045  INFO 34288 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 16:56:25.046  INFO 34288 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 16:56:25.046  INFO 34288 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 16:56:34.420  INFO 34288 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859384406,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18451643740300} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 16:56:34.421  WARN 34288 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673859384954, new-t: 1673859384406
+2023-01-16 16:57:15.463  INFO 32108 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 16:57:16.054  INFO 32108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 16:57:16.060  INFO 32108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 16:57:16.085  INFO 32108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-01-16 16:57:16.247  INFO 32108 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a679c7e9-6615-3e46-a5c2-1e4c228195fe
+2023-01-16 16:57:16.643  INFO 32108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-16 16:57:16.652  INFO 32108 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 16:57:16.653  INFO 32108 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 16:57:16.782  INFO 32108 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 16:57:16.782  INFO 32108 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1291 ms
+2023-01-16 16:57:17.351  INFO 32108 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 16:57:19.463  INFO 32108 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 16:57:20.664  INFO 32108 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 16:57:20.716  INFO 32108 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 16:57:20.717  INFO 32108 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 16:57:20.717  INFO 32108 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 16:57:20.802  INFO 32108 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 16:57:20.812  INFO 32108 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 16:57:20.846  INFO 32108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16 16:57:20.859  INFO 32108 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 16:57:20.861  INFO 32108 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@userauthservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 16:57:20.867  INFO 32108 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP userauthservice 169.254.148.54:8080 register finished
+2023-01-16 16:57:21.335  INFO 32108 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859441334,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18508571254900} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 16:57:21.926  INFO 32108 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 16:57:21.933  INFO 32108 --- [main] c.s.u.UserauthserviceApplication         : Started UserauthserviceApplication in 9.467 seconds (JVM running for 9.816)
+2023-01-16 16:57:21.937  INFO 32108 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice+DEFAULT_GROUP
+2023-01-16 16:57:21.938  INFO 32108 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 16:57:21.938  INFO 32108 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice, group=DEFAULT_GROUP
+2023-01-16 16:57:21.938  INFO 32108 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice.yaml+DEFAULT_GROUP
+2023-01-16 16:57:21.939  INFO 32108 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 16:57:21.939  INFO 32108 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice.yaml, group=DEFAULT_GROUP
+2023-01-16 16:57:21.940  INFO 32108 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 16:57:21.940  INFO 32108 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 16:57:21.940  INFO 32108 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 16:57:31.349  INFO 32108 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859441334,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18508571254900} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 16:57:31.350  WARN 32108 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673859441818, new-t: 1673859441334
+2023-01-16 16:57:53.752  INFO 32108 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 16:57:53.752  INFO 32108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 16:57:53.753  INFO 32108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 16:57:54.086  INFO 32108 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 189 ms
+2023-01-16 17:01:38.822  INFO 34056 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 17:01:39.362  INFO 34056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 17:01:39.367  INFO 34056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 17:01:39.392  INFO 34056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-01-16 17:01:39.547  INFO 34056 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a679c7e9-6615-3e46-a5c2-1e4c228195fe
+2023-01-16 17:01:39.935  INFO 34056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-16 17:01:39.946  INFO 34056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 17:01:39.946  INFO 34056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 17:01:40.074  INFO 34056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 17:01:40.074  INFO 34056 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1222 ms
+2023-01-16 17:01:40.681  INFO 34056 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 17:01:42.857  INFO 34056 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:01:44.107  INFO 34056 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:01:44.171  INFO 34056 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 17:01:44.172  INFO 34056 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 17:01:44.172  INFO 34056 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 17:01:44.253  INFO 34056 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 17:01:44.262  INFO 34056 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 17:01:44.283  INFO 34056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16 17:01:44.291  INFO 34056 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 17:01:44.292  INFO 34056 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@userauthservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 17:01:44.295  INFO 34056 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP userauthservice 169.254.148.54:8080 register finished
+2023-01-16 17:01:44.718  INFO 34056 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859704717,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18771954232000} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 17:01:45.340  INFO 34056 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:01:45.347  INFO 34056 --- [main] c.s.u.UserauthserviceApplication         : Started UserauthserviceApplication in 9.642 seconds (JVM running for 10.055)
+2023-01-16 17:01:45.350  INFO 34056 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice+DEFAULT_GROUP
+2023-01-16 17:01:45.351  INFO 34056 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:01:45.351  INFO 34056 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice, group=DEFAULT_GROUP
+2023-01-16 17:01:45.351  INFO 34056 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice.yaml+DEFAULT_GROUP
+2023-01-16 17:01:45.351  INFO 34056 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:01:45.352  INFO 34056 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice.yaml, group=DEFAULT_GROUP
+2023-01-16 17:01:45.353  INFO 34056 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 17:01:45.353  INFO 34056 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:01:45.353  INFO 34056 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 17:01:51.850  INFO 34056 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 17:01:51.851  INFO 34056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 17:01:51.852  INFO 34056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 17:01:52.215  INFO 34056 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 189 ms
+2023-01-16 17:01:54.728  INFO 34056 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859704717,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18771954232000} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 17:01:54.729  WARN 34056 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673859705279, new-t: 1673859704717
+2023-01-16 17:02:44.057  INFO 31936 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 17:02:44.581  INFO 31936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 17:02:44.586  INFO 31936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 17:02:44.609  INFO 31936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 17:02:44.768  INFO 31936 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a679c7e9-6615-3e46-a5c2-1e4c228195fe
+2023-01-16 17:02:45.176  INFO 31936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-16 17:02:45.184  INFO 31936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 17:02:45.184  INFO 31936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 17:02:45.302  INFO 31936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 17:02:45.303  INFO 31936 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1221 ms
+2023-01-16 17:02:45.893  INFO 31936 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 17:02:48.001  INFO 31936 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:02:49.263  INFO 31936 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:02:49.313  INFO 31936 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 17:02:49.314  INFO 31936 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 17:02:49.314  INFO 31936 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 17:02:49.384  INFO 31936 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 17:02:49.391  INFO 31936 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 17:02:49.410  INFO 31936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16 17:02:49.416  INFO 31936 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 17:02:49.417  INFO 31936 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@userauthservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 17:02:49.420  INFO 31936 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP userauthservice 169.254.148.54:8080 register finished
+2023-01-16 17:02:49.933  INFO 31936 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859769932,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18837169562700} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 17:02:50.466  INFO 31936 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:02:50.473  INFO 31936 --- [main] c.s.u.UserauthserviceApplication         : Started UserauthserviceApplication in 9.396 seconds (JVM running for 9.748)
+2023-01-16 17:02:50.476  INFO 31936 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice+DEFAULT_GROUP
+2023-01-16 17:02:50.477  INFO 31936 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:02:50.477  INFO 31936 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice, group=DEFAULT_GROUP
+2023-01-16 17:02:50.477  INFO 31936 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice.yaml+DEFAULT_GROUP
+2023-01-16 17:02:50.477  INFO 31936 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:02:50.477  INFO 31936 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice.yaml, group=DEFAULT_GROUP
+2023-01-16 17:02:50.478  INFO 31936 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 17:02:50.478  INFO 31936 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:02:50.479  INFO 31936 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 17:02:52.892  INFO 31936 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 17:02:52.893  INFO 31936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 17:02:52.894  INFO 31936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 17:02:53.210  INFO 31936 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 166 ms
+2023-01-16 17:02:59.939  INFO 31936 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859769932,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18837169562700} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 17:02:59.941  WARN 31936 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673859770404, new-t: 1673859769932
+2023-01-16 17:03:39.605  INFO 25504 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 17:03:40.131  INFO 25504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 17:03:40.136  INFO 25504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 17:03:40.155  INFO 25504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 17:03:40.330  INFO 25504 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a679c7e9-6615-3e46-a5c2-1e4c228195fe
+2023-01-16 17:03:40.708  INFO 25504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-16 17:03:40.719  INFO 25504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 17:03:40.720  INFO 25504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 17:03:40.856  INFO 25504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 17:03:40.856  INFO 25504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1222 ms
+2023-01-16 17:03:41.478  INFO 25504 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 17:03:43.705  INFO 25504 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:03:44.894  INFO 25504 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:03:44.958  INFO 25504 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 17:03:44.958  INFO 25504 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 17:03:44.958  INFO 25504 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 17:03:45.048  INFO 25504 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-01-16 17:03:45.057  INFO 25504 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-01-16 17:03:45.077  INFO 25504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16 17:03:45.085  INFO 25504 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 17:03:45.087  INFO 25504 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@userauthservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 17:03:45.090  INFO 25504 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP userauthservice 169.254.148.54:8080 register finished
+2023-01-16 17:03:45.584  INFO 25504 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859825583,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18892820006300} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 17:03:46.140  INFO 25504 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 17:03:46.147  INFO 25504 --- [main] c.s.u.UserauthserviceApplication         : Started UserauthserviceApplication in 9.554 seconds (JVM running for 9.892)
+2023-01-16 17:03:46.151  INFO 25504 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice+DEFAULT_GROUP
+2023-01-16 17:03:46.152  INFO 25504 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:03:46.152  INFO 25504 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice, group=DEFAULT_GROUP
+2023-01-16 17:03:46.153  INFO 25504 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice.yaml+DEFAULT_GROUP
+2023-01-16 17:03:46.153  INFO 25504 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:03:46.153  INFO 25504 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice.yaml, group=DEFAULT_GROUP
+2023-01-16 17:03:46.154  INFO 25504 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 17:03:46.155  INFO 25504 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 17:03:46.155  INFO 25504 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 17:03:55.587  INFO 25504 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673859825583,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":18892820006300} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 17:03:55.588  WARN 25504 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673859826066, new-t: 1673859825583
+2023-01-16 17:16:47.069  INFO 25504 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 17:16:47.070  INFO 25504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 17:16:47.071  INFO 25504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-01-16 17:16:47.510  INFO 25504 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 183 ms
+2023-01-16 18:21:05.589  INFO 33280 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 18:21:06.232  INFO 33280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 18:21:06.236  INFO 33280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 18:21:06.257  INFO 33280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 18:21:06.419  INFO 33280 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a679c7e9-6615-3e46-a5c2-1e4c228195fe
+2023-01-16 18:21:06.841  INFO 33280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-16 18:21:06.850  INFO 33280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 18:21:06.851  INFO 33280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 18:21:06.979  INFO 33280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 18:21:06.979  INFO 33280 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1358 ms
+2023-01-16 18:21:07.606  INFO 33280 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 18:21:10.021  INFO 33280 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:11.348  INFO 33280 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:11.424  INFO 33280 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:21:11.424  INFO 33280 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 18:21:11.425  INFO 33280 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:21:11.532  INFO 33280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16 18:21:11.541  INFO 33280 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:21:11.542  INFO 33280 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@userauthservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 18:21:11.547  INFO 33280 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP userauthservice 169.254.148.54:8080 register finished
+2023-01-16 18:21:12.021  INFO 33280 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673864472020,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":23539257726800} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:21:12.034  INFO 33280 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]
+2023-01-16 18:21:12.042  INFO 33280 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]
+2023-01-16 18:21:12.613  INFO 33280 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:12.620  INFO 33280 --- [main] c.s.u.UserauthserviceApplication         : Started UserauthserviceApplication in 10.074 seconds (JVM running for 10.437)
+2023-01-16 18:21:12.623  INFO 33280 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice+DEFAULT_GROUP
+2023-01-16 18:21:12.624  INFO 33280 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:21:12.624  INFO 33280 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice, group=DEFAULT_GROUP
+2023-01-16 18:21:12.624  INFO 33280 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice.yaml+DEFAULT_GROUP
+2023-01-16 18:21:12.625  INFO 33280 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:21:12.625  INFO 33280 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice.yaml, group=DEFAULT_GROUP
+2023-01-16 18:21:12.626  INFO 33280 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 18:21:12.627  INFO 33280 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:21:12.627  INFO 33280 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 18:21:22.027  INFO 33280 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673864472020,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":23539257726800} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:21:22.028  WARN 33280 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673864472520, new-t: 1673864472020
+2023-01-16 18:21:47.291  INFO 35596 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 18:21:48.317  INFO 35596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 18:21:48.326  INFO 35596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 18:21:48.357  INFO 35596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-01-16 18:21:48.624  INFO 35596 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a679c7e9-6615-3e46-a5c2-1e4c228195fe
+2023-01-16 18:21:49.225  INFO 35596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-16 18:21:49.240  INFO 35596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 18:21:49.241  INFO 35596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 18:21:49.478  INFO 35596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 18:21:49.479  INFO 35596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2145 ms
+2023-01-16 18:21:50.441  INFO 35596 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 18:21:53.075  INFO 35596 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:54.433  INFO 35596 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:54.517  INFO 35596 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:21:54.518  INFO 35596 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 18:21:54.519  INFO 35596 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 18:21:54.601  INFO 35596 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:21:54.610  INFO 35596 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:21:54.632  INFO 35596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16 18:21:54.640  INFO 35596 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:21:54.642  INFO 35596 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@userauthservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 18:21:54.645  INFO 35596 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP userauthservice 169.254.148.54:8080 register finished
+2023-01-16 18:21:55.140  INFO 35596 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673864515139,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":23582375926600} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:21:55.142  INFO 35596 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 18:21:55.144  INFO 35596 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : modified ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:21:55.149  INFO 35596 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 18:21:55.697  INFO 35596 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 18:21:55.707  INFO 35596 --- [main] c.s.u.UserauthserviceApplication         : Started UserauthserviceApplication in 11.695 seconds (JVM running for 12.051)
+2023-01-16 18:21:55.712  INFO 35596 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice+DEFAULT_GROUP
+2023-01-16 18:21:55.714  INFO 35596 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:21:55.714  INFO 35596 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice, group=DEFAULT_GROUP
+2023-01-16 18:21:55.715  INFO 35596 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice.yaml+DEFAULT_GROUP
+2023-01-16 18:21:55.715  INFO 35596 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:21:55.716  INFO 35596 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice.yaml, group=DEFAULT_GROUP
+2023-01-16 18:21:55.722  INFO 35596 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 18:21:55.724  INFO 35596 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 18:21:55.724  INFO 35596 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 18:22:05.144  INFO 35596 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673864515139,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":23582375926600} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 18:22:05.145  WARN 35596 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673864515624, new-t: 1673864515139
+2023-01-16 18:23:56.782  INFO 35596 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 18:23:56.782  INFO 35596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 18:23:56.783  INFO 35596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 18:24:01.266  INFO 35596 --- [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 168 ms
+2023-01-16 19:04:20.312  INFO 35596 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [polling-resp] config changed. dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 19:04:20.314  INFO 35596 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[userauthservice-dev.yaml+DEFAULT_GROUP]
+2023-01-16 19:04:20.318  INFO 35596 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [data-received] dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, tenant=null, md5=1e97a06423e0339ee4106d35bd798eaa, content=server:
+  port: 8080
+server:
+  servlet:
+    context-path: userauth
+
+spring:
+  # 数据库配置
+  datasource:
+..., type=yaml
+2023-01-16 19:04:20.320  INFO 35596 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [notify-context] dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, md5=1e97a06423e0339ee4106d35bd798eaa
+2023-01-16 19:04:21.390  INFO 35596 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:04:21.462  WARN 35596 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[userauthservice] & group[DEFAULT_GROUP]
+2023-01-16 19:04:21.464  WARN 35596 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[userauthservice.yaml] & group[DEFAULT_GROUP]
+2023-01-16 19:04:21.475 ERROR 35596 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.c.n.c.NacosPropertySourceBuilder     : parse data from Nacos error,dataId:userauthservice-dev.yaml,data:server:
+  port: 8080
+server:
+  servlet:
+    context-path: userauth
+
+spring:
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: "#Wdl200210"
+    url: jdbc:mysql:///lxj_user
+  # redis配置
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 10s
+    lettuce:
+      pool:
+        max-active: 200
+        max-wait: -1ms
+        max-idle: 10
+        min-idle: 0
+
+# sa-token配置
+sa-token: 
+  # token名称 (同时也是cookie名称)
+  token-name: token
+# #   # token有效期，单位s 默认30天, -1代表永不过期 
+#   timeout: 10
+#   # token临时有效期 (指定时间内无操作就视为token过期) 单位: 秒
+#   activity-timeout: -1
+  # 是否允许同一账号并发登录 (为true时允许一起登录, 为false时新登录挤掉旧登录) 
+  is-concurrent: true
+  # 在多人登录同一账号时，是否共用一个token (为true时所有登录共用一个token, 为false时每次登录新建一个token) 
+  is-share: true
+#   # token风格
+#   token-style: uuid
+  #   # 是否输出操作日志 
+  is-log: true
+
+# mp配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 账户校验规则
+validation-rule:
+  # 账户类型
+  identity-types: 
+    - "account" 
+  # 对应的正则表达校验规则
+  regex: 
+    - "^[a-zA-Z0-9]{8,20}$"
+
+# 日志
+logging:
+  file:
+    name: userauthservice.log
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+      file-name-pattern: userauthservice.%d{yyyy-MM-dd}.%i.log
+
+# feign优化
+feign:
+  client:
+    config:
+      default:
+        logger-level: BASIC
+  httpclient:
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50
+
+org.yaml.snakeyaml.constructor.DuplicateKeyException: while constructing a mapping
+ in 'reader', line 1, column 1:
+    server:
+    ^
+found duplicate key server
+ in 'reader', line 3, column 1:
+    server:
+    ^
+
+	at org.yaml.snakeyaml.constructor.SafeConstructor.processDuplicateKeys(SafeConstructor.java:105) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.SafeConstructor.flattenMapping(SafeConstructor.java:76) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.SafeConstructor.constructMapping2ndStep(SafeConstructor.java:189) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping(BaseConstructor.java:461) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.SafeConstructor$ConstructYamlMap.construct(SafeConstructor.java:556) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObjectNoCheck(BaseConstructor.java:230) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:220) ~[snakeyaml-1.30.jar:na]
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.constructObject(OriginTrackedYamlLoader.java:123) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:174) ~[snakeyaml-1.30.jar:na]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:139) ~[snakeyaml-1.30.jar:na]
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:103) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:514) ~[snakeyaml-1.30.jar:na]
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:198) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:88) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.alibaba.cloud.nacos.parser.NacosDataParserHandler.parseNacosData(NacosDataParserHandler.java:92) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:97) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:73) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:199) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:186) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:149) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:47) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:604) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.cloud.context.refresh.LegacyContextRefresher.addConfigFilesToEnvironment(LegacyContextRefresher.java:78) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.context.refresh.LegacyContextRefresher.updateEnvironment(LegacyContextRefresher.java:56) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.context.refresh.ContextRefresher.refreshEnvironment(ContextRefresher.java:101) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.context.refresh.ContextRefresher.refresh(ContextRefresher.java:94) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.handle(RefreshEventListener.java:72) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.onApplicationEvent(RefreshEventListener.java:61) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.24.jar:5.3.24]
+	at com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1.innerReceive(NacosContextRefresher.java:120) ~[spring-cloud-starter-alibaba-nacos-config-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.nacos.api.config.listener.AbstractSharedListener.receiveConfigInfo(AbstractSharedListener.java:40) ~[nacos-api-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.CacheData$1.run(CacheData.java:210) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.CacheData.safeNotifyListener(CacheData.java:241) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.CacheData.checkListenerMd5(CacheData.java:180) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:569) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-01-16 19:04:21.485  INFO 35596 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-userauthservice-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-userauthservice.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-userauthservice,DEFAULT_GROUP'}]
+2023-01-16 19:04:21.489  INFO 35596 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.boot.SpringApplication               : The following 1 profile is active: "dev"
+2023-01-16 19:04:21.499  INFO 35596 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.boot.SpringApplication               : Started application in 1.167 seconds (JVM running for 2557.843)
+2023-01-16 19:04:21.542  INFO 35596 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.c.e.event.RefreshEventListener       : Refresh keys changed: [spring.redis.lettuce.pool.max-active, spring.redis.lettuce.pool.max-idle, feign.client.config.default.logger-level, spring.redis.host, feign.httpclient.enabled, logging.logback.rollingpolicy.file-name-pattern, spring.datasource.driver-class-name, sa-token.token-name, sa-token.is-share, validation-rule.regex[0], server.port, sa-token.is-concurrent, feign.httpclient.max-connections-per-route, sa-token.is-log, mybatis-plus.configuration.log-impl, validation-rule.identity-types[0], logging.file.name, spring.redis.port, spring.datasource.password, spring.redis.lettuce.pool.min-idle, spring.datasource.username, feign.httpclient.max-connections, spring.datasource.url, spring.redis.timeout, spring.redis.lettuce.pool.max-wait, logging.logback.rollingpolicy.max-file-size]
+2023-01-16 19:06:55.129  INFO 17768 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 19:06:55.713  INFO 17768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 19:06:55.719  INFO 17768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 19:06:55.740  INFO 17768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-16 19:06:55.905  INFO 17768 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a679c7e9-6615-3e46-a5c2-1e4c228195fe
+2023-01-16 19:06:56.145  WARN 17768 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+2023-01-16 19:06:56.155  INFO 17768 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-16 19:06:56.175 ERROR 17768 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.scuop.userauthservice.UserauthserviceApplication.main(UserauthserviceApplication.java:27) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:219) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.7.7.jar:2.7.7]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:140) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:129) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:291) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:76) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:41) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:72) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:287) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:159) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:286) ~[spring-boot-2.7.7.jar:2.7.7]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1092) ~[na:na]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:286) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:72) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:58) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 16 common frames omitted
+
+2023-01-16 19:06:56.179  WARN 17768 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2023-01-16 19:08:26.015  INFO 6548 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 19:08:27.473  INFO 6548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 19:08:27.481  INFO 6548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 19:08:27.541  INFO 6548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2023-01-16 19:08:28.364  INFO 6548 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a679c7e9-6615-3e46-a5c2-1e4c228195fe
+2023-01-16 19:08:28.947  INFO 6548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-16 19:08:28.959  INFO 6548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 19:08:28.960  INFO 6548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 19:08:29.125  INFO 6548 --- [main] o.a.c.c.C.[.[localhost].[/userauth]      : Initializing Spring embedded WebApplicationContext
+2023-01-16 19:08:29.126  INFO 6548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3053 ms
+2023-01-16 19:08:29.970  INFO 6548 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 19:08:32.787  INFO 6548 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:08:34.195  INFO 6548 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:08:34.261  INFO 6548 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 19:08:34.262  INFO 6548 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 19:08:34.262  INFO 6548 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 19:08:34.356  INFO 6548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/userauth'
+2023-01-16 19:08:34.365  INFO 6548 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 19:08:34.366  INFO 6548 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@userauthservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 19:08:34.370  INFO 6548 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP userauthservice 169.254.148.54:8080 register finished
+2023-01-16 19:08:34.838  INFO 6548 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673867314835,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":26382073040400} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 19:08:34.863  INFO 6548 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 19:08:34.877  INFO 6548 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 19:08:35.418  INFO 6548 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:08:35.427  INFO 6548 --- [main] c.s.u.UserauthserviceApplication         : Started UserauthserviceApplication in 12.913 seconds (JVM running for 13.278)
+2023-01-16 19:08:35.431  INFO 6548 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice+DEFAULT_GROUP
+2023-01-16 19:08:35.432  INFO 6548 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:08:35.432  INFO 6548 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice, group=DEFAULT_GROUP
+2023-01-16 19:08:35.433  INFO 6548 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice.yaml+DEFAULT_GROUP
+2023-01-16 19:08:35.434  INFO 6548 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:08:35.434  INFO 6548 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice.yaml, group=DEFAULT_GROUP
+2023-01-16 19:08:35.442  INFO 6548 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 19:08:35.443  INFO 6548 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:08:35.443  INFO 6548 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 19:08:44.840  INFO 6548 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673867314835,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":26382073040400} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 19:08:44.841  WARN 6548 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673867315340, new-t: 1673867314835
+2023-01-16 19:12:58.660  INFO 6548 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/userauth]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 19:12:58.660  INFO 6548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 19:12:58.661  INFO 6548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 19:12:58.851  INFO 6548 --- [http-nio-8080-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 160 ms
+2023-01-16 19:13:47.941 ERROR 6548 --- [http-nio-8080-exec-2] c.s.u.util.GlobalExceptionAdvice         : Request method 'POST' not supported
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:256) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:442) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1265) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1047) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-01-16 19:25:12.448 ERROR 6548 --- [http-nio-8080-exec-9] c.s.u.util.GlobalExceptionAdvice         : Request method 'GET' not supported
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:256) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:442) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1265) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1047) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-01-16 19:26:47.500  INFO 31640 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 19:26:47.964  INFO 31640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 19:26:47.967  INFO 31640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 19:26:47.983  INFO 31640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-01-16 19:26:48.146  INFO 31640 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5ae212f9-0439-3d23-8ac8-6880f7d38d0a
+2023-01-16 19:26:48.509  INFO 31640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-16 19:26:48.520  INFO 31640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 19:26:48.520  INFO 31640 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 19:26:48.684  INFO 31640 --- [main] o.a.c.c.C.[.[localhost].[/userauth]      : Initializing Spring embedded WebApplicationContext
+2023-01-16 19:26:48.685  INFO 31640 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1157 ms
+2023-01-16 19:26:49.477  INFO 31640 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 19:26:51.728  INFO 31640 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:26:52.879  INFO 31640 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:26:52.933  INFO 31640 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 19:26:52.933  INFO 31640 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 19:26:52.933  INFO 31640 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 19:26:53.004  INFO 31640 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 19:26:53.012  INFO 31640 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-16 19:26:53.029  INFO 31640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/userauth'
+2023-01-16 19:26:53.036  INFO 31640 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 19:26:53.037  INFO 31640 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@userauthservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 19:26:53.039  INFO 31640 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP userauthservice 169.254.148.54:8080 register finished
+2023-01-16 19:26:53.256  INFO 31640 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/userauth]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 19:26:53.256  INFO 31640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 19:26:53.258  INFO 31640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-01-16 19:26:53.550  INFO 31640 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673868413550,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":27480786510800} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 19:26:54.079  INFO 31640 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:26:54.085  INFO 31640 --- [main] c.s.u.UserauthserviceApplication         : Started UserauthserviceApplication in 9.609 seconds (JVM running for 9.941)
+2023-01-16 19:26:54.088  INFO 31640 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice+DEFAULT_GROUP
+2023-01-16 19:26:54.089  INFO 31640 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:26:54.090  INFO 31640 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice, group=DEFAULT_GROUP
+2023-01-16 19:26:54.090  INFO 31640 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice.yaml+DEFAULT_GROUP
+2023-01-16 19:26:54.090  INFO 31640 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:26:54.090  INFO 31640 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice.yaml, group=DEFAULT_GROUP
+2023-01-16 19:26:54.092  INFO 31640 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 19:26:54.092  INFO 31640 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:26:54.092  INFO 31640 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 19:27:03.551  INFO 31640 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673868413550,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":27480786510800} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 19:27:03.552  WARN 31640 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673868414017, new-t: 1673868413550
+2023-01-16 19:27:09.561 ERROR 31640 --- [http-nio-8080-exec-3] c.s.u.util.GlobalExceptionAdvice         : Request method 'GET' not supported
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:256) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:442) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1265) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1047) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-01-16 19:28:17.588  INFO 6508 --- [main] c.s.u.UserauthserviceApplication         : The following 1 profile is active: "dev"
+2023-01-16 19:28:18.126  INFO 6508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 19:28:18.128  INFO 6508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-16 19:28:18.148  INFO 6508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-01-16 19:28:18.323  INFO 6508 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a679c7e9-6615-3e46-a5c2-1e4c228195fe
+2023-01-16 19:28:18.706  INFO 6508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-16 19:28:18.713  INFO 6508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 19:28:18.713  INFO 6508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 19:28:18.860  INFO 6508 --- [main] o.a.c.c.C.[.[localhost].[/userauth]      : Initializing Spring embedded WebApplicationContext
+2023-01-16 19:28:18.860  INFO 6508 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1244 ms
+2023-01-16 19:28:19.561  INFO 6508 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'routeservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 19:28:21.872  INFO 6508 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:28:23.079  INFO 6508 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:28:23.140  INFO 6508 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 19:28:23.141  INFO 6508 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-16 19:28:23.141  INFO 6508 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-16 19:28:23.224  INFO 6508 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 19:28:23.232  INFO 6508 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@userauthservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice","ip":"169.254.148.54","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userauthservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2023-01-16 19:28:23.253  INFO 6508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/userauth'
+2023-01-16 19:28:23.259  INFO 6508 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8080, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@userauthservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-16 19:28:23.261  INFO 6508 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@userauthservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-16 19:28:23.264  INFO 6508 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP userauthservice 169.254.148.54:8080 register finished
+2023-01-16 19:28:23.689  INFO 6508 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673868503689,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":27570925591900} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 19:28:24.312  INFO 6508 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-16 19:28:24.319  INFO 6508 --- [main] c.s.u.UserauthserviceApplication         : Started UserauthserviceApplication in 9.774 seconds (JVM running for 10.1)
+2023-01-16 19:28:24.322  INFO 6508 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice+DEFAULT_GROUP
+2023-01-16 19:28:24.323  INFO 6508 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:28:24.323  INFO 6508 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice, group=DEFAULT_GROUP
+2023-01-16 19:28:24.323  INFO 6508 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice.yaml+DEFAULT_GROUP
+2023-01-16 19:28:24.323  INFO 6508 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:28:24.324  INFO 6508 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice.yaml, group=DEFAULT_GROUP
+2023-01-16 19:28:24.326  INFO 6508 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] userauthservice-dev.yaml+DEFAULT_GROUP
+2023-01-16 19:28:24.326  INFO 6508 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-16 19:28:24.326  INFO 6508 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=userauthservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-16 19:28:33.702  INFO 6508 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@userauthservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8080#DEFAULT#DEFAULT_GROUP@@userauthservice\",\"ip\":\"169.254.148.54\",\"port\":8080,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@userauthservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000,\"instanceHeartBeatInterval\":5000}],\"lastRefTime\":1673868503689,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":27570925591900} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-16 19:28:33.703  WARN 6508 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673868504250, new-t: 1673868503689
+2023-01-16 19:29:25.352  INFO 6508 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/userauth]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 19:29:25.352  INFO 6508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 19:29:25.353  INFO 6508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-16 19:29:25.550  INFO 6508 --- [http-nio-8080-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 165 ms

@@ -1,0 +1,63 @@
+2023-01-18 00:21:48.363  INFO 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [polling-resp] config changed. dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-18 00:21:48.366  INFO 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[routeservice-dev.yaml+DEFAULT_GROUP]
+2023-01-18 00:21:48.376  INFO 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [data-received] dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, tenant=null, md5=c6fc23eec4b9536331fbdc522b82ec0f, content=server:
+  port: 8083
+  servlet:
+    context-path: /route
+
+spring:
+  # 数据库配置
+  datasource:
+    driver..., type=yaml
+2023-01-18 00:21:48.377  INFO 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [notify-context] dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, md5=c6fc23eec4b9536331fbdc522b82ec0f
+2023-01-18 00:21:49.465  INFO 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-18 00:21:49.523  WARN 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[routeservice] & group[DEFAULT_GROUP]
+2023-01-18 00:21:49.525  WARN 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[routeservice.yaml] & group[DEFAULT_GROUP]
+2023-01-18 00:21:49.530  INFO 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-routeservice-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-routeservice.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-routeservice,DEFAULT_GROUP'}]
+2023-01-18 00:21:49.537  INFO 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.boot.SpringApplication               : The following 1 profile is active: "dev"
+2023-01-18 00:21:49.544  INFO 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.boot.SpringApplication               : Started application in 1.161 seconds (JVM running for 2526.616)
+2023-01-18 00:21:49.594  INFO 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] o.s.c.e.event.RefreshEventListener       : Refresh keys changed: [feign.client.config.default.logger-level, feign.httpclient.max-connections, feign.httpclient.enabled, feign.httpclient.max-connections-per-route]
+2023-01-18 00:21:49.595  INFO 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [notify-ok] dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, md5=c6fc23eec4b9536331fbdc522b82ec0f, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@3c152e7c 
+2023-01-18 00:21:49.595  INFO 28024 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [notify-listener] time cost=1218ms in ClientWorker, dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, md5=c6fc23eec4b9536331fbdc522b82ec0f, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@3c152e7c 
+2023-01-18 00:22:02.029  INFO 3168 --- [main] c.s.r.RouteserviceApplication            : The following 1 profile is active: "dev"
+2023-01-18 00:22:02.524  INFO 3168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-18 00:22:02.527  INFO 3168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-18 00:22:02.548  INFO 3168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-01-18 00:22:02.724  INFO 3168 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8de69cf8-59dd-3ca7-a744-091fecbb04ff
+2023-01-18 00:22:03.157  INFO 3168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-01-18 00:22:03.168  INFO 3168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-18 00:22:03.169  INFO 3168 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-18 00:22:03.322  INFO 3168 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/route]  : Initializing Spring embedded WebApplicationContext
+2023-01-18 00:22:03.323  INFO 3168 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1271 ms
+2023-01-18 00:22:03.947  INFO 3168 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'imgservice' URL not provided. Will try picking an instance via load-balancing.
+2023-01-18 00:22:06.399  INFO 3168 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-18 00:22:07.665  INFO 3168 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-18 00:22:07.725  INFO 3168 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-18 00:22:07.726  INFO 3168 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2023-01-18 00:22:07.727  INFO 3168 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2023-01-18 00:22:07.805  INFO 3168 --- [main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-18 00:22:07.812  INFO 3168 --- [main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@routeservice@@DEFAULT -> [{"instanceId":"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice","ip":"169.254.148.54","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@routeservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-01-18 00:22:07.830  INFO 3168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path '/route'
+2023-01-18 00:22:07.837  INFO 3168 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8083, ip='169.254.148.54', weight=1.0, serviceName='DEFAULT_GROUP@@routeservice', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-01-18 00:22:07.838  INFO 3168 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@routeservice with instance: Instance{instanceId='null', ip='169.254.148.54', port=8083, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-01-18 00:22:07.841  INFO 3168 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP routeservice 169.254.148.54:8083 register finished
+2023-01-18 00:22:08.277  INFO 3168 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000}],\"lastRefTime\":1673972528276,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":37579061987600} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-18 00:22:08.916  INFO 3168 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-01-18 00:22:08.924  INFO 3168 --- [main] c.s.r.RouteserviceApplication            : Started RouteserviceApplication in 9.98 seconds (JVM running for 10.331)
+2023-01-18 00:22:08.933  INFO 3168 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice-dev.yaml+DEFAULT_GROUP
+2023-01-18 00:22:08.934  INFO 3168 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-18 00:22:08.934  INFO 3168 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice-dev.yaml, group=DEFAULT_GROUP
+2023-01-18 00:22:08.934  INFO 3168 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice+DEFAULT_GROUP
+2023-01-18 00:22:08.935  INFO 3168 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice, group=DEFAULT_GROUP, cnt=1
+2023-01-18 00:22:08.935  INFO 3168 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice, group=DEFAULT_GROUP
+2023-01-18 00:22:08.936  INFO 3168 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] routeservice.yaml+DEFAULT_GROUP
+2023-01-18 00:22:08.936  INFO 3168 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=routeservice.yaml, group=DEFAULT_GROUP, cnt=1
+2023-01-18 00:22:08.936  INFO 3168 --- [main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=routeservice.yaml, group=DEFAULT_GROUP
+2023-01-18 00:22:18.283  INFO 3168 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@routeservice\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"169.254.148.54#8083#DEFAULT#DEFAULT_GROUP@@routeservice\",\"ip\":\"169.254.148.54\",\"port\":8083,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@routeservice\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000}],\"lastRefTime\":1673972528276,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":37579061987600} from /0:0:0:0:0:ffff:a9fe:9436%8
+2023-01-18 00:22:18.285  WARN 3168 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1673972528824, new-t: 1673972528276
+2023-01-18 00:23:10.528  INFO 3168 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/route]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-18 00:23:10.528  INFO 3168 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-18 00:23:10.529  INFO 3168 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-01-18 00:23:11.021  INFO 3168 --- [http-nio-8083-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-18 00:23:11.247  INFO 3168 --- [http-nio-8083-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-18 00:26:02.774  INFO 3168 --- [http-nio-8083-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 220 ms
