@@ -19,6 +19,7 @@ import com.scuop.userauthservice.domain.User;
 import com.scuop.userauthservice.domain.UserAuth;
 import com.scuop.userauthservice.service.IUserAuthService;
 import com.scuop.userauthservice.util.SecurityUtil;
+import com.scuop.userauthservice.util.ThreadLocalUtil;
 import com.scuop.userauthservice.util.UserInfo;
 import com.scuop.userauthservice.util.ValidationRule;
 
@@ -76,6 +77,7 @@ public class UserAuthService extends ServiceImpl<UserAuthDao, UserAuth> implemen
      */
     // TODO: 合并处理 事务回滚未完成
     // TODO: 参照注册服务
+    // TODO: 删除用户缓存
     @Override
     public boolean deleteUser(Long user_id) {
         // TODO: 删除用户 调用user服务 到DAO改SQL语句
@@ -177,21 +179,28 @@ public class UserAuthService extends ServiceImpl<UserAuthDao, UserAuth> implemen
     /**
      * RPC删除其他信息
      * 异步优化
+     * // TODO: 这里有问题，无法保证数据库事务
      * 
      * @throws IOException
      */
     @Override
     @Async
-    public void delOtherInfo(String token) {
+    public void delOtherInfo() {
         try {
-            routeClient.deleteUserAllRoutes(token);
-            imgClient.delAllPicOfUser(token);
+            routeClient.deleteUserAllRoutes();
+            imgClient.delAllPicOfUser();
             // 注销
+            String token = (String) ThreadLocalUtil.get(StpUtil.getTokenName());
+            if (token == null || token.isEmpty() || token.isBlank())
+                token = (String) ThreadLocalUtil.get("Cookie");
             StpUtil.logoutByTokenValue(token);
         } catch (Exception e) {
             log.error("无法成功删除用户其他信息");
             log.error(e.getMessage(), e);
             // 注销
+            String token = (String) ThreadLocalUtil.get(StpUtil.getTokenName());
+            if (token == null || token.isEmpty() || token.isBlank())
+                token = (String) ThreadLocalUtil.get("Cookie");
             StpUtil.logoutByTokenValue(token);
         }
     }

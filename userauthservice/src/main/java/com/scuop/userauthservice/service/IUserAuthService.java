@@ -28,5 +28,5 @@ public interface IUserAuthService extends IService<UserAuth> {
 
     // 删除当前用户的其他信息
     @Async
-    public void delOtherInfo(String token);
+    public void delOtherInfo();
 }

@@ -24,10 +24,12 @@ public class LocationService extends ServiceImpl<LocationDao, Location> implemen
         @Autowired
         private LocationDao locationDao;
 
+
         /**
          * 返回一条路线且以order_id增序排列
          */
         @Override
+        // TODO: 缓存
         public List<Location> getOneRoute(Long routeId) {
 
                 QueryWrapper<Location> queryWrapper = new QueryWrapper<Location>();
@@ -43,6 +45,7 @@ public class LocationService extends ServiceImpl<LocationDao, Location> implemen
          * 通过一个路线ID列表 返回具体路径
          */
         @Override
+        // TODO: 缓存
         public List<List<Location>> getRoutesByRouteId(List<Long> routes) {
 
                 QueryWrapper<Location> queryWrapper = new QueryWrapper<>();
@@ -67,6 +70,7 @@ public class LocationService extends ServiceImpl<LocationDao, Location> implemen
          * @throws Exception
          */
         @Override
+        // TODO: 缓存
         public List<Long> getRoutesId(String location, Integer date) throws Exception {
 
                 QueryWrapper<Location> queryWrapper = new QueryWrapper<>();
@@ -110,6 +114,7 @@ public class LocationService extends ServiceImpl<LocationDao, Location> implemen
         /**
          * 根据路线id和地点id更新地点信息
          */
+        // TODO: 更新缓存
         @Override
         public boolean updateByRouteOrder(Location location) {
 

@@ -63,6 +63,7 @@ public class LocationController {
      */
     @PostMapping("/getRoutes")
     @Operation(summary = "获取推荐路书", description = "通过传入的地点列表获取多条推荐的路书")
+    // TODO: 另一组实现算法，方便测试这里是模拟实现直接返回，具体为通过点赞、最短距离等一系列加权+深度学习实现
     public SaResult getRoutes(@RequestBody @Validated ValidList<UserLocation> userLocations) throws Exception {
         return SaResult.data(locationService.getRoutesByRouteId(locationService.getRoutesId(
                 userLocations.get(userLocations.size() - 1).getLocation(),

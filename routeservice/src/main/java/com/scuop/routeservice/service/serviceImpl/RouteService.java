@@ -1,10 +1,15 @@
 package com.scuop.routeservice.service.serviceImpl;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
+import org.apache.commons.lang3.BooleanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
@@ -13,7 +18,9 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.scuop.imgservicefeignapi.client.ImgClient;
 import com.scuop.routeservice.dao.RouteDao;
+import com.scuop.routeservice.dao.RouteLikedDao;
 import com.scuop.routeservice.domain.Route;
+import com.scuop.routeservice.domain.RouteLiked;
 import com.scuop.routeservice.service.IRouteService;
 
 import cn.dev33.satoken.stp.StpUtil;
@@ -27,12 +34,104 @@ public class RouteService extends ServiceImpl<RouteDao, Route> implements IRoute
     private RouteDao routeDao;
 
     @Autowired
+    private RouteLikedDao routeLikedDao;
+
+    @Autowired
     private ImgClient imgClient;
+
+    @Autowired
+    private StringRedisTemplate stringRedisTemplate;
+
+    // 点赞
+    // 返回值-1取消点赞，0点赞失败，1点赞成功
+    @Override
+    // TODO: 异步落库优化
+    @Transactional
+    public boolean liked(Long routeId) {
+        Long userId = StpUtil.getLoginIdAsLong();
+        String key = "route:liked:" + routeId;
+        Boolean exsitRedis = stringRedisTemplate.opsForSet().isMember(key, userId.toString());
+        if (BooleanUtils.isFalse(exsitRedis)) {
+            Route route = routeDao.selectById(routeId);
+            if (route != null) {
+                boolean isSuccess = routeLikedDao.insert(new RouteLiked(null, userId, routeId)) > 0;
+                if (isSuccess) {
+                    int likedCount = route.getLikedCount() + 1;
+                    route.setLikedCount(likedCount);
+                    if (routeDao.updateById(route) > 0) {
+                        stringRedisTemplate.opsForSet().add(key, userId.toString());
+                        String countKey = "route:likedcount:" + route.getArea();
+                        stringRedisTemplate.opsForZSet().add(countKey, routeId.toString(), Double.valueOf(likedCount));
+                        return true;
+                    }
+                } else {
+                    int likedCount = route.getLikedCount() - 1;
+                    if (routeDao.deleteById(route) > 0) {
+                        String countKey = "route:likedcount:" + route.getArea();
+                        stringRedisTemplate.opsForZSet().add(countKey, routeId.toString(), Double.valueOf(likedCount));
+                        return true;
+                    }
+                }
+            }
+        } else {
+            boolean isSuccess = routeLikedDao.delete(
+                    new QueryWrapper<RouteLiked>().eq(RouteLiked.ROUTEID, routeId).eq(RouteLiked.USERID, userId)) > 0;
+            Route route;
+            if (isSuccess) {
+                route = routeDao.selectById(routeId);
+                if (route != null) {
+                    int likedCount = route.getLikedCount() - 1;
+                    route.setLikedCount(likedCount);
+                    if (routeDao.updateById(route) > 0) {
+                        stringRedisTemplate.opsForSet().remove(key, userId.toString());
+                        String countKey = "route:likedcount:" + route.getArea();
+                        stringRedisTemplate.opsForZSet().add(countKey, routeId.toString(), Double.valueOf(likedCount));
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    @Override
+    // TODO: 因为没有异步落库，实际上就是缓存
+    public boolean isLiked(Long routeId) {
+        Long userId = StpUtil.getLoginIdAsLong();
+        String key = "route:liked:" + routeId;
+        Boolean exsitRedis = stringRedisTemplate.opsForSet().isMember(key, userId.toString());
+        if (BooleanUtils.isFalse(exsitRedis)) {
+            RouteLiked routeLiked = routeLikedDao.selectOne(
+                    new QueryWrapper<RouteLiked>().eq(RouteLiked.ROUTEID, routeId).eq(RouteLiked.USERID,
+                            userId));
+            if (routeLiked != null)
+                return true;
+        } else
+            return true;
+        return false;
+    }
+
+    // TODO: 获取点赞排名最前的N个路书，该服务应与路书推荐算法服务结合使用
+    public List<Route> getMaxLikedList(String area, int count) {
+        if (count < 1)
+            count = 1;
+        String key = "route:likedcount:" + area;
+        Set<String> routeIdSet = stringRedisTemplate.opsForZSet().reverseRange(key, 0, count - 1);
+        List<Route> likedList = new ArrayList<>();
+        if (routeIdSet != null && routeIdSet.size() != 0)
+            likedList = routeDao.selectBatchIds(routeIdSet);
+        else {
+            likedList = routeDao.selectList(new QueryWrapper<Route>().eq(Route.AREA, area).orderByDesc(Route.LIKEDCOUNT)
+                    .last("limit " + count));
+        }
+        return likedList;
+    }
 
     /**
      * 条件模糊查询
      * 暂时按照开始时间倒序排列(越晚越前) 可能会扩展其他属性
      */
+    // TODO: 缓存
     @Override
     public List<Route> searchByConditions(
             Integer currentPage, Integer pageSize, Long id, String routeName, Long userId, String overview) {
@@ -63,6 +162,7 @@ public class RouteService extends ServiceImpl<RouteDao, Route> implements IRoute
      * 并验证当前账户的id
      * 只有账户id和路线id一致时才可删除
      */
+    // TODO: 删除缓存
     @Override
     public boolean deleteByUserAndRouteId(Long id) {
 
@@ -78,6 +178,7 @@ public class RouteService extends ServiceImpl<RouteDao, Route> implements IRoute
     /**
      * 根据路线的id改变路线的某些展示值
      */
+    // TODO: 更新缓存
     @Override
     public boolean changeById(Route route) {
 
@@ -103,6 +204,7 @@ public class RouteService extends ServiceImpl<RouteDao, Route> implements IRoute
     /**
      * 删除当前用户的所有路线
      */
+    // TODO: 删除缓存
     @Override
     public boolean deleteAllRoutesOfUser() {
 
@@ -119,9 +221,9 @@ public class RouteService extends ServiceImpl<RouteDao, Route> implements IRoute
      */
     @Override
     @Async
-    public void deleteImgOfRoute(Long routeId, String token) {
+    public void deleteImgOfRoute(Long routeId) {
         try {
-            imgClient.delARouteByRouteId(routeId, token);
+            imgClient.delARouteByRouteId(routeId);
         } catch (Exception e) {
             log.error(e.getMessage(), e);
         }

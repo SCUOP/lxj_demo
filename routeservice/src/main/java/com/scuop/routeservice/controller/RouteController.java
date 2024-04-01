@@ -31,6 +31,36 @@ public class RouteController {
     @Autowired
     private IRouteService routeService;
 
+    @GetMapping("/liked")
+    @Operation(summary = "点赞", description = """
+            请求点赞，若已经点赞则为取消点赞。
+            """)
+    public SaResult liked(
+            @RequestParam(value = "route_id", required = true) @Parameter(description = "路书ID", in = ParameterIn.PATH, required = true) Long routeId) {
+        boolean flag = routeService.liked(routeId);
+        if (!flag)
+            return SaResult.error("点赞未成功");
+        return SaResult.ok();
+    }
+
+    @GetMapping("/isLiked")
+    @Operation(summary = "是否点赞")
+    public SaResult isLiked(
+            @RequestParam(value = "route_id", required = true) @Parameter(description = "路书ID", in = ParameterIn.PATH, required = true) Long routeId) {
+        boolean flag = routeService.isLiked(routeId);
+        return SaResult.data(flag);
+    }
+
+    @GetMapping("/getMaxLikedRoutes")
+    @Operation(summary = "获取某个区域点赞最多的n个路书")
+    public SaResult getMaxLikedRoutes(
+            @RequestParam(value = "area", required = true) @Parameter(description = "地区", in = ParameterIn.PATH, required = true) String area,
+            @RequestParam(value = "count", required = false) @Parameter(description = "获取个数", in = ParameterIn.PATH, required = false) Integer count) {
+        if (count == null)
+            count = Integer.valueOf(5);
+        return SaResult.data(routeService.getMaxLikedList(area, count));
+    }
+
     /**
      * TODO: 后续可扩展
      * 查找符合条件的路线并可分页
@@ -71,7 +101,7 @@ public class RouteController {
             @PathVariable(value = "id") @Parameter(description = "路线id", in = ParameterIn.PATH, required = true) Long id) {
         // 删除的时候需要提供路线的id
         if (id != null && routeService.deleteByUserAndRouteId(id)) {
-            routeService.deleteImgOfRoute(id, StpUtil.getTokenValue());
+            routeService.deleteImgOfRoute(id);
 
             return SaResult.ok("删除成功");
         }
@@ -130,8 +160,7 @@ public class RouteController {
     @DeleteMapping("/deleteUserAllRoutes")
     @Operation(summary = "删除所属用户的所有路线", description = "删除当前用户所属所有路线")
     @Hidden
-    public SaResult deleteUserAllRoutes(@RequestBody String token) {
-        StpUtil.setTokenValue(token);
+    public SaResult deleteUserAllRoutes() {
         return SaResult.data(routeService.deleteAllRoutesOfUser());
     }
 

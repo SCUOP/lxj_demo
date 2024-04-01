@@ -68,6 +68,10 @@
 			<version>1.33.0</version>
 		</dependency>
 		<!-- redis实例化方案 -->
+		<!-- <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency> -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-pool2</artifactId>

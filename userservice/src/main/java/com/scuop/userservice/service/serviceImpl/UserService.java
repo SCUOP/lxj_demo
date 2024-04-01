@@ -28,6 +28,7 @@ public class UserService extends ServiceImpl<UserDao, User> implements IUserServ
          * TODO: 返回顺序可能之后按照一个值排序
          */
         @Override
+        // TODO:加缓存
         public List<User> fuzzyGetUser(Integer currentPage, Integer pageSize, Long id, String nickname) {
 
                 QueryWrapper<User> queryWrapper = new QueryWrapper<User>();
@@ -47,6 +48,7 @@ public class UserService extends ServiceImpl<UserDao, User> implements IUserServ
         /**
          * 更新用户信息
          */
+        // TODO: 缓存更新
         @Override
         public boolean updateUser(User user) {
 

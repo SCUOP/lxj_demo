@@ -93,6 +93,8 @@ public class UserAuthController {
             **不需传入新密码字段,若传入会被忽略**
             ```
             """)
+    @Deprecated
+    // TODO: 删除操作有问题，未保证数据库事务
     public SaResult deleteUser(@RequestBody @Validated UserInfo userInfo) throws IOException {
         // TODO: 删除账号的所有有关信息, 包括该账号对应的账号和路线
         Long user_id = userAuthService.checkAccount(userInfo);
@@ -100,7 +102,7 @@ public class UserAuthController {
         if (user_id.equals(StpUtil.getLoginIdAsLong())) {
             if (userAuthService.deleteUser(user_id)) {
                 // TODO: 删除用户的其他信息
-                userAuthService.delOtherInfo(StpUtil.getTokenValue());
+                userAuthService.delOtherInfo();
                 return SaResult.ok("删除成功");
             }
         }

@@ -57,7 +57,7 @@ public class IMGController {
     public SaResult upload(
             @RequestPart("pic") MultipartFile multipartFile,
             @RequestParam("picsrc") String picSrc,
-            @RequestParam(value = "routeId", required = false) Long routeId)
+            @RequestParam(value = "route_id", required = false) Long routeId)
             throws IOException {
 
         int picSrcType = picSource.existPicSource(picSrc);
@@ -97,9 +97,9 @@ public class IMGController {
     // 删除所属用户所有的图片
     @DeleteMapping("/delAllPicOfUser")
     @Hidden
-    public void delAllPicOfUser(@RequestBody String token) throws IOException {
+    public void delAllPicOfUser() throws IOException {
         // 设置token
-        StpUtil.setTokenValue(token);
+        // StpUtil.setTokenValue(token);
         File file = new File(filePath + "/" + StpUtil.getLoginIdAsLong());
         FileUtils.deleteDirectory(file);
     }
@@ -116,10 +116,9 @@ public class IMGController {
     // 删除所属用户某条路线的所有图片
     @DeleteMapping("/delARouteByRouteId")
     @Hidden
-    public void delARouteByRouteId(@RequestParam(value = "routeId") Long routeId,
-            @RequestBody String token) {
+    public void delARouteByRouteId(@RequestParam(value = "route_id") Long routeId) {
         // 设置token
-        StpUtil.setTokenValue(token);
+        // StpUtil.setTokenValue(token);
         // 不可为空
         if (routeId == null)
             return;

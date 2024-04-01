@@ -1,5 +1,7 @@
-CREATE DATABASE  IF NOT EXISTS `lxj_user` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `lxj_user`;
+-- CREATE DATABASE  IF NOT EXISTS `lxj_user` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE  IF NOT EXISTS `lxj`;
+-- USE `lxj_user`;
+USE `lxj`;
 -- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
 --
 -- Host: 120.27.148.25    Database: lxj_user

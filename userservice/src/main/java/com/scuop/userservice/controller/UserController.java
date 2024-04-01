@@ -33,6 +33,7 @@ public class UserController {
      */
     @GetMapping("/myself")
     @Operation(summary = "查询登录用户信息, 无参数")
+    // TODO: 加缓存
     public SaResult getMyself() {
         return new SaResult(200, "拉取本机用户信息", userService.getById(StpUtil.getLoginIdAsLong()));
     }
@@ -45,6 +46,7 @@ public class UserController {
     @Deprecated
     @GetMapping("/getOneUserById/{id}")
     @Operation(summary = "过时 可用getUser代替")
+    // TODO: 加缓存
     public SaResult getOneUserById(@PathVariable(value = "id") Long id) {
         return new SaResult(200, "获取id为: " + id + " 的用户信息", userService.getById(id));
     }
