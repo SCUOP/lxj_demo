@@ -219,6 +219,7 @@ public class RouteService extends ServiceImpl<RouteDao, Route> implements IRoute
     /**
      * 异步RPC调用 删除该路线所属图片
      */
+    // TODO: 简单实现，这里应该用一个机制去重试保证删除，或者用日志记录一下删除失败的任务
     @Override
     @Async
     public void deleteImgOfRoute(Long routeId) {

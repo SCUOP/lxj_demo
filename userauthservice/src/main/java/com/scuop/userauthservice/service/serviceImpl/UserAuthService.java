@@ -185,6 +185,7 @@ public class UserAuthService extends ServiceImpl<UserAuthDao, UserAuth> implemen
      */
     @Override
     @Async
+    @Transactional
     public void delOtherInfo() {
         try {
             routeClient.deleteUserAllRoutes();
